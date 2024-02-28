@@ -1,0 +1,27 @@
+﻿<Window x:Class="FFUTweak.FlashApp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FFUTweak"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        ui:ThemeManager.RequestedTheme="Light"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="FFUTweaker - FlashApp" Height="500" Width="850" Background="White">
+    <Grid>
+        <ui:SimpleStackPanel Orientation="Vertical">
+            <TextBlock Text="Flash your newly saved Custom FFU to your device, choosing wether to Unlock or Relock the bootloader." Margin="15,10,10,0"></TextBlock>
+            <TextBlock x:Name="FlashInfoBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,5,10,0" Height="360"/>
+            <ProgressBar x:Name="FlashProgress" Height="4" HorizontalAlignment="Stretch" Margin="5,5,5,0"/>
+            <ui:SimpleStackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Button x:Name="FlashButton" Content="Flash FFU" Click="FlashButton_Click"/>
+                <Button x:Name="UnlockBtn" Content="Unlock Bootloader" Click="UnlockBtn_Click"/>
+                <Button x:Name="RelockBtn" Content="Relock Bootloader" Click="RelockBtn_Click"/>
+            </ui:SimpleStackPanel>
+
+        </ui:SimpleStackPanel>
+    </Grid>
+</Window>

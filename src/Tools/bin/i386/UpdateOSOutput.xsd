@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" elementFormDefault="qualified" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:mstns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UpdateOSOutput">
+  <xs:complexType>
+    <xs:all>
+      <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="OverallResult" type="xs:integer" minOccurs="1" maxOccurs="1" />
+      <xs:element name="UpdateState" type="xs:string" minOccurs="1" maxOccurs="1" />
+                                            
+      <xs:element name="Progress" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="CompletedIncrements" type="xs:integer" minOccurs="1" maxOccurs="1" />
+            <xs:element name="TotalIncrements" type="xs:integer" minOccurs="1" maxOccurs="1" />
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="Packages" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Package" minOccurs="1" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="PackageFile" type="xs:string" minOccurs="1" maxOccurs="1" />
+                  <xs:element name="PackageIdentity" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="PackageStyle" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="PackageType" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="SourceVersion" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="Stomped" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="Identity" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                      <xs:all>
+                        <xs:element name="Owner" type="xs:string" minOccurs="1" maxOccurs="1" />
+                        <xs:element name="Component" type="xs:string" minOccurs="1" maxOccurs="1" />
+                        <xs:element name="SubComponent" type="xs:string" minOccurs="0" maxOccurs="1" />
+                        <xs:element name="Version" minOccurs="1" maxOccurs="1">
+                          <xs:complexType>
+                          <xs:attribute name="Major" type="xs:string"/>
+                          <xs:attribute name="Minor" type="xs:string"/>
+                          <xs:attribute name="QFE" type="xs:string"/>
+                          <xs:attribute name="Build" type="xs:string"/>
+                        </xs:complexType>
+                      </xs:element>
+                      </xs:all>
+                    </xs:complexType>
+                  </xs:element>
+
+                  <xs:element name="ReleaseType" type="xs:string" minOccurs="1" maxOccurs="1" />
+                  <xs:element name="OwnerType" type="xs:string" minOccurs="1" maxOccurs="1" />
+                  <xs:element name="BuildType" type="xs:string" minOccurs="1" maxOccurs="1" />
+                  <xs:element name="CpuType" type="xs:string" minOccurs="1" maxOccurs="1" />
+                  <xs:element name="Culture" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="Resolution" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="Partition" type="xs:string" minOccurs="1" maxOccurs="1" />
+                  <xs:element name="Platform" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="GroupingKey" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="TargetGroups" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="IsRemoval" type="xs:boolean" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="IsBinaryPartition" type="xs:boolean" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="Result" type="xs:integer" minOccurs="0" maxOccurs="1" />
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+</xs:element>                                      
+
+</xs:schema>

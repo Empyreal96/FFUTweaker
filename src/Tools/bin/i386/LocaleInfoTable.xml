@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+          NOTE: This file was generated using the XSLT transform in
+           %SDXROOT%\base\win32\winnls\data\other\ConvertMergedCultureForWP.xslt
+           ****************************************************
+           **** THIS TABLE MUST BE SORTED BY LOCALENAME!!! ****
+           ****************************************************
+        -->
+<LocaleInfoLookup>
+<Locale name="af-ZA" LCID="0436" ACP="1252" OEMCP="850" InputLocale="00000436" GeoIDNation="209" WpServedMarket="1" AssociatedUILang="af-ZA" Bcp47Normalized="af" />
+<Locale name="am-ET" LCID="045e" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="73" WpServedMarket="1" AssociatedUILang="am-ET" Bcp47Normalized="am" />
+<Locale name="ar-AE" LCID="3801" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="224" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-BH" LCID="3c01" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="17" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-DZ" LCID="1401" ACP="1256" OEMCP="720" InputLocale="0000040c" GeoIDNation="4" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-EG" LCID="0c01" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="67" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-IQ" LCID="0801" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="121" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-JO" LCID="2c01" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="126" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-KW" LCID="3401" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="136" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-LB" LCID="3001" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="139" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-LY" LCID="1001" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="148" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-MA" LCID="1801" ACP="1256" OEMCP="720" InputLocale="0000040c" GeoIDNation="159" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-OM" LCID="2001" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="164" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-QA" LCID="4001" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="197" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-SA" LCID="0401" ACP="1256" OEMCP="720" InputLocale="00000409" LOCALE_ICALENDARTYPE="1" GeoIDNation="205" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-SY" LCID="2801" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="222" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-TN" LCID="1c01" ACP="1256" OEMCP="720" InputLocale="0000040c" GeoIDNation="234" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="ar-YE" LCID="2401" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="261" WpServedMarket="1" AssociatedUILang="ar-SA" />
+<Locale name="arn-CL" LCID="047a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="46" Bcp47Normalized="arn-Latn" />
+<Locale name="as-IN" LCID="044d" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" Bcp47Normalized="as" />
+<Locale name="az-Cyrl-AZ" LCID="082c" ACP="1251" OEMCP="866" InputLocale="0000042c" GeoIDNation="5" Bcp47Normalized="az-Cyrl" />
+<Locale name="az-Latn-AZ" LCID="042c" ACP="1254" OEMCP="857" InputLocale="0000042c" GeoIDNation="5" WpServedMarket="1" AssociatedUILang="az-Latn-AZ" Bcp47Normalized="az-Latn" />
+<Locale name="ba-RU" LCID="046d" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="203" Bcp47Normalized="ba-Cyrl" />
+<Locale name="be-BY" LCID="0423" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="29" WpServedMarket="1" AssociatedUILang="be-BY" Bcp47Normalized="be" />
+<Locale name="bg-BG" LCID="0402" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="35" WpServedMarket="1" AssociatedUILang="bg-BG" Bcp47Normalized="bg" />
+<Locale name="bin-NG" LCID="0466" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="175" />
+<Locale name="bn-BD" LCID="0845" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="23" WpServedMarket="1" AssociatedUILang="bn-BD" />
+<Locale name="bn-IN" LCID="0445" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" WpServedMarket="1" AssociatedUILang="bn-BD" />
+<Locale name="bo-CN" LCID="0451" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="45" Bcp47Normalized="bo-Tibt" />
+<Locale name="br-FR" LCID="047e" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="84" Bcp47Normalized="br-Latn" />
+<Locale name="bs-Cyrl-BA" LCID="201a" ACP="1251" OEMCP="855" InputLocale="00000409" GeoIDNation="25" Bcp47Normalized="bs-Cyrl" />
+<Locale name="bs-Latn-BA" LCID="141a" ACP="1250" OEMCP="852" InputLocale="00000409" GeoIDNation="25" Bcp47Normalized="bs" />
+<Locale name="ca-ES" LCID="0403" ACP="1252" OEMCP="850" InputLocale="00000403" GeoIDNation="217" WpServedMarket="1" AssociatedUILang="ca-ES" Bcp47Normalized="ca" />
+<Locale name="ca-ES-valencia" LCID="0803" ACP="1252" OEMCP="850" InputLocale="00000403" GeoIDNation="217" />
+<Locale name="chr-Cher-US" LCID="045c" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="244" Bcp47Normalized="chr-Cher" />
+<Locale name="co-FR" LCID="0483" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="84" Bcp47Normalized="co-Latn" />
+<Locale name="cs-CZ" LCID="0405" ACP="1250" OEMCP="852" InputLocale="00000405" GeoIDNation="75" WpServedMarket="1" AssociatedUILang="cs-CZ" Bcp47Normalized="cs" />
+<Locale name="cy-GB" LCID="0452" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="242" Bcp47Normalized="cy" />
+<Locale name="da-DK" LCID="0406" ACP="1252" OEMCP="850" InputLocale="00000406" GeoIDNation="61" WpServedMarket="1" AssociatedUILang="da-DK" Bcp47Normalized="da" />
+<Locale name="de-AT" LCID="0c07" ACP="1252" OEMCP="850" InputLocale="00000407" GeoIDNation="14" WpServedMarket="1" AssociatedUILang="de-DE" />
+<Locale name="de-CH" LCID="0807" ACP="1252" OEMCP="850" InputLocale="00000407" GeoIDNation="223" WpServedMarket="1" AssociatedUILang="de-DE" />
+<Locale name="de-DE" LCID="0407" ACP="1252" OEMCP="850" InputLocale="00000407" GeoIDNation="94" SpeechSRLang="de-DE" SpeechTTSVoiceLangToken="MSTTS_V110_deDE_KatjaM" WpServedMarket="1" AssociatedUILang="de-DE" />
+<Locale name="de-LI" LCID="1407" ACP="1252" OEMCP="850" InputLocale="00000407" GeoIDNation="145" WpServedMarket="1" AssociatedUILang="de-DE" />
+<Locale name="de-LU" LCID="1007" ACP="1252" OEMCP="850" InputLocale="00000407" GeoIDNation="147" WpServedMarket="1" AssociatedUILang="de-DE" />
+<Locale name="dsb-DE" LCID="082e" ACP="1252" OEMCP="850" InputLocale="00000407" GeoIDNation="94" Bcp47Normalized="dsb" />
+<Locale name="dv-MV" LCID="0465" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="165" Bcp47Normalized="dv" />
+<Locale name="dz-BT" LCID="0c51" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="34" Bcp47Normalized="dz" />
+<Locale name="el-GR" LCID="0408" ACP="1253" OEMCP="737" InputLocale="00000409" GeoIDNation="98" WpServedMarket="1" AssociatedUILang="el-GR" Bcp47Normalized="el" />
+<Locale name="en-029" LCID="2409" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="124" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-AU" LCID="0c09" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="12" SpeechSRLang="en-AU" SpeechTTSVoiceLangToken="MSTTS_V110_enAU_CatherineM" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-BZ" LCID="2809" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="24" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-CA" LCID="1009" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="39" SpeechSRLang="en-CA" SpeechTTSVoiceLangToken="MSTTS_V110_enCA_LindaM" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-GB" LCID="0809" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="242" SpeechSRLang="en-GB" SpeechTTSVoiceLangToken="MSTTS_V110_enGB_SusanM" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-HK" LCID="3c09" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="104" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-ID" LCID="3809" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="111" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-IE" LCID="1809" ACP="1252" OEMCP="850" InputLocale="00001809" GeoIDNation="68" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-IN" LCID="4009" ACP="1252" OEMCP="437" InputLocale="00004009" MUIDisplayCountry="1" GeoIDNation="113" SpeechSRLang="en-IN" SpeechTTSVoiceLangToken="MSTTS_V110_enIN_HeeraM" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-JM" LCID="2009" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="124" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-MY" LCID="4409" ACP="1252" OEMCP="437" InputLocale="00000809" GeoIDNation="167" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-NZ" LCID="1409" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="183" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-PH" LCID="3409" ACP="1252" OEMCP="437" InputLocale="00000409" GeoIDNation="201" WpServedMarket="1" AssociatedUILang="en-US" />
+<Locale name="en-SG" LCID="4809" ACP="1252" OEMCP="437" InputLocale="00000809" GeoIDNation="215" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-TT" LCID="2c09" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="225" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-US" LCID="0409" ACP="1252" OEMCP="437" InputLocale="00000409" MUIDisplayCountry="1" GeoIDNation="244" SpeechSRLang="en-US" SpeechTTSVoiceLangToken="MSTTS_V110_enUS_ZiraM" WpServedMarket="1" AssociatedUILang="en-US" />
+<Locale name="en-ZA" LCID="1c09" ACP="1252" OEMCP="437" InputLocale="00000809" GeoIDNation="209" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="en-ZW" LCID="3009" ACP="1252" OEMCP="437" InputLocale="00000809" GeoIDNation="264" WpServedMarket="1" AssociatedUILang="en-GB" />
+<Locale name="es-419" LCID="580a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="166" />
+<Locale name="es-AR" LCID="2c0a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="11" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-BO" LCID="400a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="26" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-CL" LCID="340a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="46" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-CO" LCID="240a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="51" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-CR" LCID="140a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="54" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-CU" LCID="5c0a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="56" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-DO" LCID="1c0a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="65" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-EC" LCID="300a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="66" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-ES" LCID="0c0a" ACP="1252" OEMCP="850" InputLocale="00000c0a" MUIDisplayCountry="1" GeoIDNation="217" SpeechSRLang="es-ES" SpeechTTSVoiceLangToken="MSTTS_V110_esES_LauraM" WpServedMarket="1" AssociatedUILang="es-ES" />
+<Locale name="es-ES_tradnl" LCID="040a" ACP="1252" OEMCP="850" InputLocale="00000c0a" GeoIDNation="217" />
+<Locale name="es-GT" LCID="100a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="99" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-HN" LCID="480a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="106" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-MX" LCID="080a" ACP="1252" OEMCP="850" InputLocale="0000080a" MUIDisplayCountry="1" GeoIDNation="166" SpeechSRLang="es-MX" SpeechTTSVoiceLangToken="MSTTS_V110_esMX_SabinaM" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-NI" LCID="4c0a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="182" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-PA" LCID="180a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="192" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-PE" LCID="280a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="187" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-PR" LCID="500a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="202" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-PY" LCID="3c0a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="185" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-SV" LCID="440a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="72" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-US" LCID="540a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="244" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-UY" LCID="380a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="246" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="es-VE" LCID="200a" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="249" WpServedMarket="1" AssociatedUILang="es-MX" />
+<Locale name="et-EE" LCID="0425" ACP="1257" OEMCP="775" InputLocale="00000425" GeoIDNation="70" WpServedMarket="1" AssociatedUILang="et-EE" Bcp47Normalized="et" />
+<Locale name="eu-ES" LCID="042d" ACP="1252" OEMCP="850" InputLocale="0000042d" GeoIDNation="217" WpServedMarket="1" AssociatedUILang="eu-ES" Bcp47Normalized="eu" />
+<Locale name="fa-IR" LCID="0429" ACP="1256" OEMCP="720" InputLocale="00000409" LOCALE_ICALENDARTYPE="1" GeoIDNation="116" WpServedMarket="1" AssociatedUILang="fa-IR" Bcp47Normalized="fa" />
+<Locale name="ff-Latn-SN" LCID="0867" ACP="1252" OEMCP="850" InputLocale="00000488" GeoIDNation="210" Bcp47Normalized="ff-Latn" />
+<Locale name="ff-NG" LCID="0467" ACP="1252" OEMCP="850" InputLocale="00000488" GeoIDNation="175" />
+<Locale name="fi-FI" LCID="040b" ACP="1252" OEMCP="850" InputLocale="0000040b" GeoIDNation="77" WpServedMarket="1" AssociatedUILang="fi-FI" Bcp47Normalized="fi" />
+<Locale name="fil-PH" LCID="0464" ACP="1252" OEMCP="437" InputLocale="00000409" GeoIDNation="201" WpServedMarket="1" AssociatedUILang="fil-PH" Bcp47Normalized="fil-Latn" />
+<Locale name="fo-FO" LCID="0438" ACP="1252" OEMCP="850" InputLocale="00000406" GeoIDNation="81" Bcp47Normalized="fo" />
+<Locale name="fr-029" LCID="1c0c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="330" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-BE" LCID="080c" ACP="1252" OEMCP="850" InputLocale="0000080c" GeoIDNation="21" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-CA" LCID="0c0c" ACP="1252" OEMCP="850" InputLocale="00000c0c" GeoIDNation="39" SpeechSRLang="fr-CA" SpeechTTSVoiceLangToken="MSTTS_V110_frCA_CarolineM" WpServedMarket="1" AssociatedUILang="fr-CA" />
+<Locale name="fr-CD" LCID="240c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="44" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-CH" LCID="100c" ACP="1252" OEMCP="850" InputLocale="0000100c" GeoIDNation="223" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-CI" LCID="300c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="119" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-CM" LCID="2c0c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="49" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-FR" LCID="040c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="84" SpeechSRLang="fr-FR" SpeechTTSVoiceLangToken="MSTTS_V110_frFR_JulieM" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-HT" LCID="3c0c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="103" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-LU" LCID="140c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="147" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-MA" LCID="380c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="159" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-MC" LCID="180c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="158" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-ML" LCID="340c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="157" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-RE" LCID="200c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="198" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fr-SN" LCID="280c" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="210" WpServedMarket="1" AssociatedUILang="fr-FR" />
+<Locale name="fy-NL" LCID="0462" ACP="1252" OEMCP="850" InputLocale="00000413" GeoIDNation="176" Bcp47Normalized="fy" />
+<Locale name="ga-IE" LCID="083c" ACP="1252" OEMCP="850" InputLocale="00001809" GeoIDNation="68" Bcp47Normalized="ga" />
+<Locale name="gd-GB" LCID="0491" ACP="1252" OEMCP="850" InputLocale="00001809" GeoIDNation="242" Bcp47Normalized="gd-Latn" />
+<Locale name="gl-ES" LCID="0456" ACP="1252" OEMCP="850" InputLocale="00000456" GeoIDNation="217" WpServedMarket="1" AssociatedUILang="gl-ES" Bcp47Normalized="gl" />
+<Locale name="gn-PY" LCID="0474" ACP="1252" OEMCP="850" InputLocale="00000474" GeoIDNation="185" Bcp47Normalized="gn" />
+<Locale name="gsw-FR" LCID="0484" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="84" Bcp47Normalized="gsw" />
+<Locale name="gu-IN" LCID="0447" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" Bcp47Normalized="gu" />
+<Locale name="ha-Latn-NG" LCID="0468" ACP="1252" OEMCP="437" InputLocale="00000468" GeoIDNation="175" WpServedMarket="1" AssociatedUILang="ha-Latn-NG" Bcp47Normalized="ha-Latn" />
+<Locale name="haw-US" LCID="0475" ACP="1252" OEMCP="437" InputLocale="00000409" GeoIDNation="244" Bcp47Normalized="haw-Latn" />
+<Locale name="he-IL" LCID="040d" ACP="1255" OEMCP="862" InputLocale="00000409" GeoIDNation="117" WpServedMarket="1" AssociatedUILang="he-IL" Bcp47Normalized="he" />
+<Locale name="hi-IN" LCID="0439" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" WpServedMarket="1" AssociatedUILang="hi-IN" Bcp47Normalized="hi" />
+<Locale name="hr-BA" LCID="101a" ACP="1250" OEMCP="852" InputLocale="0000041a" GeoIDNation="25" WpServedMarket="1" AssociatedUILang="hr-HR" />
+<Locale name="hr-HR" LCID="041a" ACP="1250" OEMCP="852" InputLocale="0000041a" GeoIDNation="108" WpServedMarket="1" AssociatedUILang="hr-HR" />
+<Locale name="hsb-DE" LCID="042e" ACP="1252" OEMCP="850" InputLocale="0000042e" GeoIDNation="94" Bcp47Normalized="hsb" />
+<Locale name="hu-HU" LCID="040e" ACP="1250" OEMCP="852" InputLocale="0000040e" GeoIDNation="109" WpServedMarket="1" AssociatedUILang="hu-HU" Bcp47Normalized="hu" />
+<Locale name="hy-AM" LCID="042b" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="7" Bcp47Normalized="hy" />
+<Locale name="ibb-NG" LCID="0469" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="175" />
+<Locale name="id-ID" LCID="0421" ACP="1252" OEMCP="850" InputLocale="00000421" GeoIDNation="111" WpServedMarket="1" AssociatedUILang="id-ID" Bcp47Normalized="id" />
+<Locale name="ig-NG" LCID="0470" ACP="1252" OEMCP="437" InputLocale="00000470" GeoIDNation="175" Bcp47Normalized="ig-Latn" />
+<Locale name="ii-CN" LCID="0478" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="45" Bcp47Normalized="ii-Yiii" />
+<Locale name="is-IS" LCID="040f" ACP="1252" OEMCP="850" InputLocale="0000040f" GeoIDNation="110" WpServedMarket="1" AssociatedUILang="is-IS" Bcp47Normalized="is" />
+<Locale name="it-CH" LCID="0810" ACP="1252" OEMCP="850" InputLocale="00000410" GeoIDNation="223" WpServedMarket="1" AssociatedUILang="it-IT" />
+<Locale name="it-IT" LCID="0410" ACP="1252" OEMCP="850" InputLocale="00000410" GeoIDNation="118" SpeechSRLang="it-IT" SpeechTTSVoiceLangToken="MSTTS_V110_itIT_ElsaM" WpServedMarket="1" AssociatedUILang="it-IT" />
+<Locale name="iu-Cans-CA" LCID="045d" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="39" Bcp47Normalized="iu-Cans" />
+<Locale name="iu-Latn-CA" LCID="085d" ACP="1252" OEMCP="437" InputLocale="00000409" GeoIDNation="39" Bcp47Normalized="iu-Latn" />
+<Locale name="ja-JP" LCID="0411" ACP="932" OEMCP="932" InputLocale="00000411" GeoIDNation="122" SpeechSRLang="ja-JP" SpeechTTSVoiceLangToken="MSTTS_V110_jaJP_AyumiM" WpServedMarket="1" AssociatedUILang="ja-JP" Bcp47Normalized="ja" />
+<Locale name="ka-GE" LCID="0437" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="88" Bcp47Normalized="ka" />
+<Locale name="kk-KZ" LCID="043f" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="137" WpServedMarket="1" AssociatedUILang="kk-KZ" Bcp47Normalized="kk" />
+<Locale name="kl-GL" LCID="046f" ACP="1252" OEMCP="850" InputLocale="00000406" GeoIDNation="93" Bcp47Normalized="kl" />
+<Locale name="km-KH" LCID="0453" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="40" WpServedMarket="1" AssociatedUILang="km-KH" Bcp47Normalized="km" />
+<Locale name="kn-IN" LCID="044b" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" WpServedMarket="1" AssociatedUILang="kn-IN" Bcp47Normalized="kn" />
+<Locale name="ko-KR" LCID="0412" ACP="949" OEMCP="949" InputLocale="00000409" GeoIDNation="134" SpeechTTSVoiceLangToken="MSTTS_V110_koKR_HeamiM" WpServedMarket="1" AssociatedUILang="ko-KR" Bcp47Normalized="ko" />
+<Locale name="kok-IN" LCID="0457" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" Bcp47Normalized="kok" />
+<Locale name="kr-NG" LCID="0471" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="175" />
+<Locale name="ks-Deva-IN" LCID="0860" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" />
+<Locale name="ku-Arab-IQ" LCID="0492" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="121" Bcp47Normalized="ku-Arab" />
+<Locale name="ky-KG" LCID="0440" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="130" Bcp47Normalized="ky-Cyrl" />
+<Locale name="la-001" LCID="0476" ACP="1252" OEMCP="437" InputLocale="00000409" GeoIDNation="253" />
+<Locale name="lb-LU" LCID="046e" ACP="1252" OEMCP="850" InputLocale="0000046e" GeoIDNation="147" Bcp47Normalized="lb" />
+<Locale name="lo-LA" LCID="0454" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="138" WpServedMarket="1" AssociatedUILang="lo-LA" Bcp47Normalized="lo" />
+<Locale name="lt-LT" LCID="0427" ACP="1257" OEMCP="775" InputLocale="00000427" GeoIDNation="141" WpServedMarket="1" AssociatedUILang="lt-LT" Bcp47Normalized="lt" />
+<Locale name="lv-LV" LCID="0426" ACP="1257" OEMCP="775" InputLocale="00000426" GeoIDNation="140" WpServedMarket="1" AssociatedUILang="lv-LV" Bcp47Normalized="lv" />
+<Locale name="mi-NZ" LCID="0481" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="183" Bcp47Normalized="mi-Latn" />
+<Locale name="mk-MK" LCID="042f" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="19618" WpServedMarket="1" AssociatedUILang="mk-MK" Bcp47Normalized="mk" />
+<Locale name="ml-IN" LCID="044c" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" WpServedMarket="1" AssociatedUILang="ml-IN" Bcp47Normalized="ml" />
+<Locale name="mn-MN" LCID="0450" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="154" Bcp47Normalized="mn-Cyrl" />
+<Locale name="mn-Mong-CN" LCID="0850" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="45" Bcp47Normalized="mn-Mong" />
+<Locale name="mn-Mong-MN" LCID="0c50" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="154" />
+<Locale name="mni-IN" LCID="0458" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" />
+<Locale name="moh-CA" LCID="047c" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="39" Bcp47Normalized="moh-Latn" />
+<Locale name="mr-IN" LCID="044e" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" Bcp47Normalized="mr" />
+<Locale name="ms-BN" LCID="083e" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="37" WpServedMarket="1" AssociatedUILang="ms-MY" />
+<Locale name="ms-MY" LCID="043e" ACP="1252" OEMCP="850" InputLocale="0000043e" GeoIDNation="167" WpServedMarket="1" AssociatedUILang="ms-MY" />
+<Locale name="mt-MT" LCID="043a" ACP="1252" OEMCP="850" InputLocale="0000043a" GeoIDNation="163" Bcp47Normalized="mt" />
+<Locale name="my-MM" LCID="0455" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="27" Bcp47Normalized="my" />
+<Locale name="nb-NO" LCID="0414" ACP="1252" OEMCP="850" InputLocale="00000414" GeoIDNation="177" WpServedMarket="1" AssociatedUILang="nb-NO" Bcp47Normalized="nb" />
+<Locale name="ne-IN" LCID="0861" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" />
+<Locale name="ne-NP" LCID="0461" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="178" />
+<Locale name="nl-BE" LCID="0813" ACP="1252" OEMCP="850" InputLocale="00000813" GeoIDNation="21" WpServedMarket="1" AssociatedUILang="nl-NL" />
+<Locale name="nl-NL" LCID="0413" ACP="1252" OEMCP="850" InputLocale="00000413" GeoIDNation="176" WpServedMarket="1" AssociatedUILang="nl-NL" />
+<Locale name="nn-NO" LCID="0814" ACP="1252" OEMCP="850" InputLocale="00000414" GeoIDNation="177" Bcp47Normalized="nn" />
+<Locale name="nso-ZA" LCID="046c" ACP="1252" OEMCP="850" InputLocale="0000046c" GeoIDNation="209" Bcp47Normalized="nso" />
+<Locale name="oc-FR" LCID="0482" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="84" Bcp47Normalized="oc-Latn" />
+<Locale name="om-ET" LCID="0472" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="73" Bcp47Normalized="om" />
+<Locale name="or-IN" LCID="0448" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" Bcp47Normalized="or" />
+<Locale name="pa-Arab-PK" LCID="0846" ACP="1256" OEMCP="720" InputLocale="00000809" GeoIDNation="190" Bcp47Normalized="pa-Arab" />
+<Locale name="pa-IN" LCID="0446" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" Bcp47Normalized="pa" />
+<Locale name="pap-029" LCID="0479" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="273" />
+<Locale name="pl-PL" LCID="0415" ACP="1250" OEMCP="852" InputLocale="00000415" GeoIDNation="191" SpeechTTSVoiceLangToken="MSTTS_V110_plPL_PaulinaM" WpServedMarket="1" AssociatedUILang="pl-PL" Bcp47Normalized="pl" />
+<Locale name="prs-AF" LCID="048c" ACP="1256" OEMCP="720" InputLocale="00000809" LOCALE_ICALENDARTYPE="1" GeoIDNation="3" Bcp47Normalized="prs-Arab" />
+<Locale name="ps-AF" LCID="0463" ACP="1256" OEMCP="720" InputLocale="00000809" LOCALE_ICALENDARTYPE="1" GeoIDNation="3" Bcp47Normalized="ps" />
+<Locale name="pt-BR" LCID="0416" ACP="1252" OEMCP="850" InputLocale="00000416" MUIDisplayCountry="1" GeoIDNation="32" SpeechSRLang="pt-BR" SpeechTTSVoiceLangToken="MSTTS_V110_ptBR_MariaM" WpServedMarket="1" AssociatedUILang="pt-BR" />
+<Locale name="pt-PT" LCID="0816" ACP="1252" OEMCP="850" InputLocale="00000816" MUIDisplayCountry="1" GeoIDNation="193" WpServedMarket="1" AssociatedUILang="pt-PT" />
+<Locale name="qps-Latn-x-sh" LCID="0901" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="124" SpeechSRLang="en-US" SpeechTTSVoiceLangToken="MSTTS_V110_enUS_ZiraM" AssociatedUILang="qps-ploc" />
+<Locale name="qps-ploc" LCID="0501" ACP="1250" OEMCP="852" InputLocale="00000409" GeoIDNation="244" SpeechSRLang="en-US" SpeechTTSVoiceLangToken="MSTTS_V110_enUS_ZiraM" WpServedMarket="1" AssociatedUILang="qps-ploc" />
+<Locale name="qps-ploca" LCID="05fe" ACP="932" OEMCP="932" InputLocale="00000411" GeoIDNation="122" WpServedMarket="1" AssociatedUILang="qps-ploca" />
+<Locale name="qps-plocm" LCID="09ff" ACP="1256" OEMCP="720" InputLocale="00000409" LOCALE_ICALENDARTYPE="1" GeoIDNation="205" WpServedMarket="1" AssociatedUILang="qps-plocm" />
+<Locale name="quc-Latn-GT" LCID="0486" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="99" Bcp47Normalized="quc-Latn" />
+<Locale name="quz-BO" LCID="046b" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="26" Bcp47Normalized="quz-Latn-BO" />
+<Locale name="quz-EC" LCID="086b" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="66" Bcp47Normalized="quz-Latn-EC" />
+<Locale name="quz-PE" LCID="0c6b" ACP="1252" OEMCP="850" InputLocale="0000080a" GeoIDNation="187" Bcp47Normalized="quz-Latn-PE" />
+<Locale name="rm-CH" LCID="0417" ACP="1252" OEMCP="850" InputLocale="00000807" GeoIDNation="223" Bcp47Normalized="rm" />
+<Locale name="ro-MD" LCID="0818" ACP="1250" OEMCP="852" InputLocale="00000418" GeoIDNation="152" WpServedMarket="1" AssociatedUILang="ro-RO" />
+<Locale name="ro-RO" LCID="0418" ACP="1250" OEMCP="852" InputLocale="00000418" GeoIDNation="200" WpServedMarket="1" AssociatedUILang="ro-RO" />
+<Locale name="ru-MD" LCID="0819" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="152" WpServedMarket="1" AssociatedUILang="ru-RU" />
+<Locale name="ru-RU" LCID="0419" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="203" SpeechTTSVoiceLangToken="MSTTS_V110_ruRU_IrinaM" WpServedMarket="1" AssociatedUILang="ru-RU" />
+<Locale name="rw-RW" LCID="0487" ACP="1252" OEMCP="437" InputLocale="00000809" GeoIDNation="204" Bcp47Normalized="rw" />
+<Locale name="sa-IN" LCID="044f" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" Bcp47Normalized="sa-Deva" />
+<Locale name="sah-RU" LCID="0485" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="203" Bcp47Normalized="sah-Cyrl" />
+<Locale name="sd-Arab-PK" LCID="0859" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="190" Bcp47Normalized="sd-Arab" />
+<Locale name="sd-Deva-IN" LCID="0459" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" />
+<Locale name="se-FI" LCID="0c3b" ACP="1252" OEMCP="850" InputLocale="0001083b" GeoIDNation="77" Bcp47Normalized="se-Latn-FI" />
+<Locale name="se-NO" LCID="043b" ACP="1252" OEMCP="850" InputLocale="0000043b" GeoIDNation="177" Bcp47Normalized="se-Latn-NO" />
+<Locale name="se-SE" LCID="083b" ACP="1252" OEMCP="850" InputLocale="0000043b" GeoIDNation="221" Bcp47Normalized="se-Latn-SE" />
+<Locale name="si-LK" LCID="045b" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="42" Bcp47Normalized="si" />
+<Locale name="sk-SK" LCID="041b" ACP="1250" OEMCP="852" InputLocale="0000041b" GeoIDNation="143" WpServedMarket="1" AssociatedUILang="sk-SK" Bcp47Normalized="sk" />
+<Locale name="sl-SI" LCID="0424" ACP="1250" OEMCP="852" InputLocale="00000424" GeoIDNation="212" WpServedMarket="1" AssociatedUILang="sl-SI" Bcp47Normalized="sl" />
+<Locale name="sma-NO" LCID="183b" ACP="1252" OEMCP="850" InputLocale="0000043b" GeoIDNation="177" Bcp47Normalized="sma-Latn-NO" />
+<Locale name="sma-SE" LCID="1c3b" ACP="1252" OEMCP="850" InputLocale="0000083b" GeoIDNation="221" Bcp47Normalized="sma-Latn-SE" />
+<Locale name="smj-NO" LCID="103b" ACP="1252" OEMCP="850" InputLocale="0000043b" GeoIDNation="177" Bcp47Normalized="smj-Latn-NO" />
+<Locale name="smj-SE" LCID="143b" ACP="1252" OEMCP="850" InputLocale="0000083b" GeoIDNation="221" Bcp47Normalized="smj-Latn-SE" />
+<Locale name="smn-FI" LCID="243b" ACP="1252" OEMCP="850" InputLocale="0000083b" GeoIDNation="77" Bcp47Normalized="smn-Latn" />
+<Locale name="sms-FI" LCID="203b" ACP="1252" OEMCP="850" InputLocale="0000083b" GeoIDNation="77" Bcp47Normalized="sms-Latn" />
+<Locale name="so-SO" LCID="0477" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="216" Bcp47Normalized="so" />
+<Locale name="sq-AL" LCID="041c" ACP="1250" OEMCP="852" InputLocale="0000041c" GeoIDNation="6" WpServedMarket="1" AssociatedUILang="sq-AL" Bcp47Normalized="sq" />
+<Locale name="sr-Cyrl-BA" LCID="1c1a" ACP="1251" OEMCP="855" InputLocale="0000241a" GeoIDNation="25" />
+<Locale name="sr-Cyrl-CS" LCID="0c1a" ACP="1251" OEMCP="855" InputLocale="0000241a" GeoIDNation="269" />
+<Locale name="sr-Cyrl-ME" LCID="301a" ACP="1251" OEMCP="855" InputLocale="0000241a" GeoIDNation="270" />
+<Locale name="sr-Cyrl-RS" LCID="281a" ACP="1251" OEMCP="855" InputLocale="0000241a" GeoIDNation="271" />
+<Locale name="sr-Latn-BA" LCID="181a" ACP="1250" OEMCP="852" InputLocale="0000241a" GeoIDNation="25" WpServedMarket="1" AssociatedUILang="sr-Latn-RS" />
+<Locale name="sr-Latn-CS" LCID="081a" ACP="1250" OEMCP="852" InputLocale="0000241a" GeoIDNation="269" />
+<Locale name="sr-Latn-ME" LCID="2c1a" ACP="1250" OEMCP="852" InputLocale="0000241a" GeoIDNation="270" WpServedMarket="1" AssociatedUILang="sr-Latn-RS" />
+<Locale name="sr-Latn-RS" LCID="241a" ACP="1250" OEMCP="852" InputLocale="0000241a" GeoIDNation="271" WpServedMarket="1" AssociatedUILang="sr-Latn-RS" />
+<Locale name="st-ZA" LCID="0430" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="209" Bcp47Normalized="st" />
+<Locale name="sv-FI" LCID="081d" ACP="1252" OEMCP="850" InputLocale="0000041d" GeoIDNation="77" WpServedMarket="1" AssociatedUILang="sv-SE" />
+<Locale name="sv-SE" LCID="041d" ACP="1252" OEMCP="850" InputLocale="0000041d" GeoIDNation="221" WpServedMarket="1" AssociatedUILang="sv-SE" />
+<Locale name="sw-KE" LCID="0441" ACP="1252" OEMCP="437" InputLocale="00000441" GeoIDNation="129" WpServedMarket="1" AssociatedUILang="sw-KE" Bcp47Normalized="sw" />
+<Locale name="syr-SY" LCID="045a" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="222" Bcp47Normalized="syr-Syrc" />
+<Locale name="ta-IN" LCID="0449" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" WpServedMarket="1" AssociatedUILang="ta-IN" />
+<Locale name="ta-LK" LCID="0849" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="42" WpServedMarket="1" AssociatedUILang="ta-IN" />
+<Locale name="te-IN" LCID="044a" ACP="1252" OEMCP="850" InputLocale="00004009" GeoIDNation="113" WpServedMarket="1" AssociatedUILang="te-IN" Bcp47Normalized="te" />
+<Locale name="tg-Cyrl-TJ" LCID="0428" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="228" Bcp47Normalized="tg-Cyrl" />
+<Locale name="th-TH" LCID="041e" ACP="874" OEMCP="874" InputLocale="00000409" LOCALE_ICALENDARTYPE="1" GeoIDNation="227" WpServedMarket="1" AssociatedUILang="th-TH" Bcp47Normalized="th" />
+<Locale name="ti-ER" LCID="0873" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="71" />
+<Locale name="ti-ET" LCID="0473" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="73" />
+<Locale name="tk-TM" LCID="0442" ACP="1250" OEMCP="852" InputLocale="00000409" GeoIDNation="238" Bcp47Normalized="tk-Latn" />
+<Locale name="tn-BW" LCID="0832" ACP="1252" OEMCP="850" InputLocale="00000432" GeoIDNation="19" />
+<Locale name="tn-ZA" LCID="0432" ACP="1252" OEMCP="850" InputLocale="00000432" GeoIDNation="209" />
+<Locale name="tr-TR" LCID="041f" ACP="1254" OEMCP="857" InputLocale="0000041f" GeoIDNation="235" WpServedMarket="1" AssociatedUILang="tr-TR" Bcp47Normalized="tr" />
+<Locale name="ts-ZA" LCID="0431" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="209" Bcp47Normalized="ts" />
+<Locale name="tt-RU" LCID="0444" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="203" Bcp47Normalized="tt-Cyrl" />
+<Locale name="tzm-Arab-MA" LCID="045f" ACP="1256" OEMCP="720" InputLocale="00000401" GeoIDNation="159" />
+<Locale name="tzm-Latn-DZ" LCID="085f" ACP="1252" OEMCP="850" InputLocale="0000085f" GeoIDNation="4" Bcp47Normalized="tzm-Latn" />
+<Locale name="tzm-Tfng-MA" LCID="105f" ACP="1252" OEMCP="850" InputLocale="0000040c" GeoIDNation="159" Bcp47Normalized="tzm-Tfng" />
+<Locale name="ug-CN" LCID="0480" ACP="1256" OEMCP="720" InputLocale="00000409" GeoIDNation="45" Bcp47Normalized="ug-Arab" />
+<Locale name="uk-UA" LCID="0422" ACP="1251" OEMCP="866" InputLocale="00000409" GeoIDNation="241" WpServedMarket="1" AssociatedUILang="uk-UA" Bcp47Normalized="uk" />
+<Locale name="ur-IN" LCID="0820" ACP="1256" OEMCP="720" InputLocale="00004009" GeoIDNation="113" />
+<Locale name="ur-PK" LCID="0420" ACP="1256" OEMCP="720" InputLocale="00000809" GeoIDNation="190" />
+<Locale name="uz-Cyrl-UZ" LCID="0843" ACP="1251" OEMCP="866" InputLocale="00000443" GeoIDNation="247" Bcp47Normalized="uz-Cyrl" />
+<Locale name="uz-Latn-UZ" LCID="0443" ACP="1254" OEMCP="857" InputLocale="00000443" GeoIDNation="247" WpServedMarket="1" AssociatedUILang="uz-Latn-UZ" Bcp47Normalized="uz-Latn" />
+<Locale name="ve-ZA" LCID="0433" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="209" />
+<Locale name="vi-VN" LCID="042a" ACP="1258" OEMCP="1258" InputLocale="0000042a" GeoIDNation="251" WpServedMarket="1" AssociatedUILang="vi-VN" Bcp47Normalized="vi" />
+<Locale name="wo-SN" LCID="0488" ACP="1252" OEMCP="850" InputLocale="00000488" GeoIDNation="210" Bcp47Normalized="wo-Latn" />
+<Locale name="xh-ZA" LCID="0434" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="209" Bcp47Normalized="xh" />
+<Locale name="yi-001" LCID="043d" ACP="1252" OEMCP="850" InputLocale="00000409" GeoIDNation="117" />
+<Locale name="yo-NG" LCID="046a" ACP="1252" OEMCP="437" InputLocale="0000046a" GeoIDNation="175" Bcp47Normalized="yo-Latn" />
+<Locale name="zh-CN" LCID="0804" ACP="936" OEMCP="936" InputLocale="00000804" GeoIDNation="45" SpeechSRLang="zh-CN" SpeechTTSVoiceLangToken="MSTTS_V110_zhCN_YaoyaoM" WpServedMarket="1" AssociatedUILang="zh-CN" Bcp47Normalized="zh-Hans-CN" />
+<Locale name="zh-HK" LCID="0c04" ACP="950" OEMCP="950" InputLocale="00000809" GeoIDNation="104" SpeechTTSVoiceLangToken="MSTTS_V110_zhHK_TracyM" WpServedMarket="1" AssociatedUILang="zh-TW" Bcp47Normalized="zh-Hant-HK" />
+<Locale name="zh-MO" LCID="1404" ACP="950" OEMCP="950" InputLocale="00000809" GeoIDNation="151" WpServedMarket="1" AssociatedUILang="zh-TW" Bcp47Normalized="zh-Hant-MO" />
+<Locale name="zh-SG" LCID="1004" ACP="936" OEMCP="936" InputLocale="00000809" GeoIDNation="215" WpServedMarket="1" AssociatedUILang="zh-CN" Bcp47Normalized="zh-Hans-SG" />
+<Locale name="zh-TW" LCID="0404" ACP="950" OEMCP="950" InputLocale="00000409" GeoIDNation="237" SpeechTTSVoiceLangToken="MSTTS_V110_zhTW_YatingM" WpServedMarket="1" AssociatedUILang="zh-TW" Bcp47Normalized="zh-Hant-TW" />
+<Locale name="zu-ZA" LCID="0435" ACP="1252" OEMCP="850" InputLocale="00000809" GeoIDNation="209" Bcp47Normalized="zu" />
+</LocaleInfoLookup>

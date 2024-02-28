@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+           elementFormDefault="qualified"
+           xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+           xmlns:mstns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--
+     Schema for Root Node: ImageCustomizations
+    -->
+
+    <xs:element name="ImageCustomizations">
+      <xs:annotation>
+        <xs:documentation>
+          Root node for specifying customizations. The attributes are
+          used for customization package generation purposes.
+        </xs:documentation>
+      </xs:annotation>
+      <xs:complexType mixed="true">
+        <xs:sequence>
+          <xs:element ref="Imports" minOccurs="0" maxOccurs="1" />
+          <xs:element ref="Targets" minOccurs="0" maxOccurs="1" />
+          <xs:element ref="Static" minOccurs="0" maxOccurs="1" />
+          <xs:element ref="Variant" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+        
+        <!-- Name and Description Information -->
+        <xs:attribute name="Name" type="xs:string" use="optional" />
+        <xs:attribute name="Description" type="xs:string" use="optional" />
+        
+        <!-- Ownership -->
+        <xs:attribute name="Owner" type="xs:string" use="required"/>
+        <xs:attribute name="OwnerType" type="CustomizationOwner" use="required"/>
+        <xs:attribute name="Priority" type="xs:positiveInteger" use="optional" />
+      </xs:complexType>
+    </xs:element>
+
+  <!--
+    Schema for Imports
+  -->
+  
+  <xs:element name="Imports">
+    <xs:annotation>
+      <xs:documentation>
+        Array of Import.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Import" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:unique name="ImportSource">
+      <xs:selector xpath="Import" />
+      <xs:field xpath="@Source" />
+    </xs:unique>
+  </xs:element>
+
+  <xs:element name="Import">
+    <xs:annotation>
+      <xs:documentation>
+        A file to import and merge with these customizations. Anything in the import file will be overridden by this file.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="Source" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- 
+    Schema for Targets
+  -->
+
+  <xs:element name="TargetRefs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="TargetRef" minOccurs="1" maxOccurs="1" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:unique name="TargetRefsId">
+      <xs:selector xpath="TargetRef" />
+      <xs:field xpath="@Id" />
+    </xs:unique>
+  </xs:element>
+
+  <xs:element name="TargetRef">
+    <xs:complexType>
+      <xs:attribute name="Id" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Targets">
+    <xs:annotation>
+      <xs:documentation>
+        Array of Target.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Target" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:unique name="TargetId">
+      <xs:selector xpath="Target" />
+      <xs:field xpath="@Id" />
+    </xs:unique>
+  </xs:element>
+
+  <xs:element name="Target">
+    <xs:annotation>
+      <xs:documentation>
+        A single discrete Target that will cause a variant to be applied. Can contain multiple sets of TargetState that will cause the Target to fire.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="TargetState" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+
+      <xs:attribute name="Id" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="TargetState">
+    <xs:annotation>
+      <xs:documentation>
+        Array of Condition.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Condition" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:unique name="ConditionName">
+      <xs:selector xpath="Condition" />
+      <xs:field xpath="@Name" />
+    </xs:unique>
+  </xs:element>
+
+  <xs:element name="Condition">
+    <xs:annotation>
+      <xs:documentation>
+        A single Condition name/value pair. The name is a multivariant Condition name such as MNC.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required" />
+      <xs:attribute name="Value" type="xs:string" use="optional" />
+      <xs:attribute name="IsWildCard" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- 
+    Schema for Variants
+  -->
+
+  <xs:element name="Static">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="DataAssets" />
+        <xs:element ref="Applications" />
+        <xs:element ref="Settings" />
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="SettingsPathStatic">
+      <xs:selector xpath="Settings" />
+      <xs:field xpath="@Path" />
+    </xs:unique>
+    <xs:unique name="ApplicationsTypeStatic">
+      <xs:selector xpath="Applications" />
+      <xs:field xpath="@Type" />
+    </xs:unique>
+    <xs:unique name="DataAssetsType">
+      <xs:selector xpath="DataAssets" />
+      <xs:field xpath="@Type" />
+    </xs:unique>
+  </xs:element>
+
+  <xs:element name="Variant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="TargetRefs" minOccurs="1" maxOccurs="1" />
+    
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="Applications" />
+          <xs:element ref="Settings" />
+        </xs:choice>
+      </xs:sequence>
+
+      <xs:attribute name="Name" type="xs:string" use="optional" />
+    </xs:complexType>
+    <xs:unique name="SettingsPathVariant">
+      <xs:selector xpath="Settings" />
+      <xs:field xpath="@Path" />
+    </xs:unique>
+    <xs:unique name="ApplicationsTypeVariant">
+      <xs:selector xpath="Applications" />
+      <xs:field xpath="@Type" />
+    </xs:unique>
+  </xs:element>
+
+  <!--
+    Schema for Data Assets
+  -->
+
+  <xs:element name="DataAssets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DataAsset" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+
+      <xs:attribute name="Type" type="CustomizationDataAssetType" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="DataAsset">
+    <xs:complexType>
+      <xs:attribute name="Source" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  
+  <!--
+    Schema for Applications
+  -->
+
+  <xs:element name="Applications">
+    <xs:annotation>
+      <xs:documentation>
+        Array of Application. Type determines which partition this group will use.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Application" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Application">
+    <xs:complexType>
+      <xs:attribute name="Source" type="xs:string" use="optional" />
+      <xs:attribute name="License" type="xs:string" use="required" />
+      <xs:attribute name="ProvXML" type="xs:string" use="required" />
+      <xs:attribute name="TargetPartition" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- 
+    Schema for Settings
+  -->
+
+  <xs:element name="Settings">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="Setting"/>
+        <xs:element ref="Asset"/>
+      </xs:choice>
+      <xs:attribute name="Path" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:unique name="SettingName">
+      <xs:selector xpath="Setting" />
+      <xs:field xpath="@Name" />
+    </xs:unique>
+  </xs:element>
+
+  <xs:element name="Setting">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required" />
+      <xs:attribute name="Value" type="xs:string" use="optional" />
+      <xs:attribute name="Type" type="CustomValueType" use="optional" />      
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Asset">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required" />
+      <xs:attribute name="Source" type="xs:string" use="required" />
+      <xs:attribute name="TargetFileName" type="xs:string" use="optional" />
+      <xs:attribute name="DisplayName" type="xs:string" use="optional" />
+      <xs:attribute name="Type" type="CustomizationAssetOwner" use="optional" default="OEM" />
+    </xs:complexType>
+  </xs:element>
+  
+  <!--
+    Types used by the Schema
+  -->
+  
+  <xs:simpleType name="CustomValueType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="integer" />
+      <xs:enumeration value="string" />
+      <xs:enumeration value="boolean" />
+      <xs:enumeration value="binary" />
+      <xs:enumeration value="integer64" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="CustomizationApplicationDestination">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OSPartition" />
+      <xs:enumeration value="DataPartition" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CustomizationDataAssetType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MapData" />
+      <xs:enumeration value="RetailDemo_Microsoft" />
+      <xs:enumeration value="RetailDemo_OEM" />
+      <xs:enumeration value="RetailDemo_MO" />
+      <xs:enumeration value="RetailDemo_Apps" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CustomizationAssetOwner">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OEM" />
+      <xs:enumeration value="MobileOperator" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="CustomizationOwner">
+    <xs:annotation>
+      <xs:documentation>
+        Specifies the expected owner types for the customization package.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OEM"/>
+      <xs:enumeration value="SiliconVendor"/>
+      <xs:enumeration value="MobileOperator"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

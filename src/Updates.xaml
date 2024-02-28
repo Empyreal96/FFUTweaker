@@ -1,0 +1,33 @@
+﻿<Page x:Class="FFUTweak.Updates"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FFUTweak"
+      xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:ThemeManager.RequestedTheme="Light"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Updates">
+
+    <Grid>
+        <ui:SimpleStackPanel>
+        <TextBlock Text="Here you can apply OS upgrades to the mounted image, ANY MODIFICATIONS MADE PRIOR TO THIS OPERATION MAY BE LOST" TextWrapping="Wrap" Margin="75,10,10,0"></TextBlock>
+            <TextBlock x:Name="CurrentBuildInfo" Text="Build info" Margin="75,10,10,0"/>
+            <ui:SimpleStackPanel Orientation="Horizontal">
+                <ComboBox x:Name="UpdateList" SelectedValuePath="Content"   Margin="75,10,10,0">
+                
+            </ComboBox>
+                <Button x:Name="ApplyUpdBtn" Click="ApplyUpdBtn_Click" Content="Apply Update" Margin="0,10,0,0"/>
+                <Button x:Name="ApplyCustomBtn" Visibility="Collapsed" Click="ApplyCustomBtn_Click" Content="Open Update List and Apply" Margin="10,10,0,0"/>
+            </ui:SimpleStackPanel>
+            <ScrollViewer x:Name="UpdateOutScroller" Height="300" Width="720" Margin="75,15,75,0">
+            <TextBlock x:Name="UpdateappOutput" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" />
+            </ScrollViewer>
+            <ui:SimpleStackPanel Orientation="Vertical" Margin="75,0,25,0" >
+                <ProgressBar x:Name="DownloadProgressBar" Margin="0,5,0,5" Height="5" />
+                <TextBlock x:Name="UpdateProgressCount" HorizontalAlignment="Center"  Margin="0,0,0,0"/>
+            </ui:SimpleStackPanel>
+        </ui:SimpleStackPanel>
+    </Grid>
+</Page>

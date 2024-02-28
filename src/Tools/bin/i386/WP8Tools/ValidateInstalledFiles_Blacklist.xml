@@ -1,0 +1,5 @@
+<!--Copyright (c) Microsoft Corporation. All rights reserved.-->
+<root>
+    <Blacklistfile Name="SystemInfoExe.exe" />
+    <Blacklistfile Name="SystemInfo.dll" />
+</root>

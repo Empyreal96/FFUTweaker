@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Empyreal96\source\repos\FFUTweak\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Applications.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FlashApp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Folders.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="img2ffu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Settings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Stores.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Style.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Updates.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WP81Updater.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Tools\bin\i386\BcdLayout.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\BSPCompDB.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\BuildCompDB.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\CompDBChunkMapping.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\CompDBPublishingInfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\DeviceCompDB.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\DeviceLayout.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\DeviceLayoutv2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\FeatureManifest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\FMCollection.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\ImagingEditions.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\OEMDevicePlatform.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\OEMInput.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\PropsProject.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\PublishingPackageInfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\UpdateCompDB.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\UpdateHistory.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\UpdateOSInput.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Tools\bin\i386\UpdateOSOutput.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Update="Tools\bin\i386\WP8Tools\Customization.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Update="Tools\bin\i386\WP8Tools\OEMInput.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Applications.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FlashApp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Folders.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="img2ffu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Settings.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Stores.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Updates.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WP81Updater.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

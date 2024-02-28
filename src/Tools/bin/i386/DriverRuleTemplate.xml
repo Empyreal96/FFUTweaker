@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DriverRuleTemplates xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00">
+
+    <!-- Following is a sample rule -->
+    <DriverRule Name="SampleRuleTemplate">
+        <AccessedByCapability Id="ID_CAP_LOCATION" Rights="$(GENERIC_READ)" />
+    </DriverRule>
+
+</DriverRuleTemplates>

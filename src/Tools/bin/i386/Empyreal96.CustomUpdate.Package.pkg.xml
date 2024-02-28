@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00" 
+   Owner="Empyreal96" 
+   OwnerType="OEM" 
+   ReleaseType="Production" 
+   Platform="Generic" 
+   Component="CustomUpdate" 
+   SubComponent="Package"> 
+   <Components> 
+      <OSComponent> 
+         <RegKeys>
+			<RegKey KeyName="$(hklm.software)\Microsoft\Windows\CurrentVersion\AppModelUnlock">
+			<RegValue Name="AllowAllTrustedApps" Value="00000001" Type="REG_DWORD"/>
+			</RegKey>
+		 </RegKeys>
+
+      </OSComponent> 
+   </Components> 
+</Package> 

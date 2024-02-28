@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" elementFormDefault="qualified" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:mstns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UpdateOSInput">
+      <xs:complexType>
+          <xs:all>
+            <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="DateTime" type="xs:string" default="0001-01-01T00:00:00" minOccurs="0" maxOccurs="1" />            
+
+            <!-- back compat -->
+            <xs:element name="UpdateOSMode" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="UpdateApplicationMode" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="UIBitmapFile" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <!-- end back compat -->
+            
+            <xs:element name="PackageFiles" minOccurs="0" maxOccurs="1">
+                  <xs:complexType>
+                      <xs:sequence>
+                          <xs:element name="PackageFile" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                      </xs:sequence>
+                  </xs:complexType>
+              </xs:element>
+          </xs:all>
+      </xs:complexType>
+  </xs:element>
+</xs:schema>

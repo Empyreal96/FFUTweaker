@@ -1,0 +1,61 @@
+﻿<Window x:Class="FFUTweak.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FFUTweak"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        ui:ThemeManager.RequestedTheme="Light"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="FFUTweaker" Height="500" Width="850" Background="White">
+    <Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        <ui:NavigationView x:Name="MainNavView" SelectionChanged="MainNavView_SelectionChanged" IsPaneOpen="True" IsSettingsVisible="False" IsBackButtonVisible="Collapsed">
+            <ui:NavigationView.MenuItems>
+                <ui:NavigationViewItem Tag="NavHomeTag" Margin="-3,0,0,0">
+                    <ui:SimpleStackPanel Orientation="Horizontal">
+                        <ui:SymbolIcon Symbol="Home"/>
+                        <TextBlock Text="Home" VerticalAlignment="Center" Margin="10,0,0,0" FontSize="16"/>
+                    </ui:SimpleStackPanel>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Tag="NavUpdatesTag" Margin="-3,0,0,0">
+                    <ui:SimpleStackPanel Orientation="Horizontal">
+                        <ui:SymbolIcon Symbol="Download"/>
+                        <TextBlock Text="Updates" VerticalAlignment="Center" Margin="10,0,0,0" FontSize="16"/>
+                    </ui:SimpleStackPanel>
+                </ui:NavigationViewItem>
+
+                <ui:NavigationViewItem Tag="NavFoldersTag" Margin="-3,0,0,0">
+                    <ui:SimpleStackPanel Orientation="Horizontal">
+                        <ui:SymbolIcon Symbol="MoveToFolder"/>
+                        <TextBlock Text="Open Folders" Margin="10,0,0,0" FontSize="16"/>
+                    </ui:SimpleStackPanel>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Tag="NavStylesTag" Margin="-3,0,0,0">
+                    <ui:SimpleStackPanel Orientation="Horizontal">
+                        <ui:SymbolIcon Symbol="Emoji"/>
+                        <TextBlock Text="Styles"  Margin="10,0,0,0" FontSize="16"/>
+                    </ui:SimpleStackPanel>
+                </ui:NavigationViewItem>
+                
+                <ui:NavigationViewItem Tag="NavAppsTag" Margin="-3,0,0,0">
+                    <ui:SimpleStackPanel Orientation="Horizontal">
+                        <ui:SymbolIcon Symbol="AllApps"></ui:SymbolIcon>
+                        <TextBlock Text="Applications" Margin="10,0,0,0" FontSize="16"/>
+                    </ui:SimpleStackPanel>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Tag="NavSettingsTag" Margin="-3,0,0,0">
+                    <ui:SimpleStackPanel Orientation="Horizontal">
+                        <ui:SymbolIcon Symbol="Setting"/>
+                        <TextBlock Text="Settings" Margin="10,0,0,0" FontSize="16"/>
+                    </ui:SimpleStackPanel>
+                </ui:NavigationViewItem>
+            </ui:NavigationView.MenuItems>
+
+        </ui:NavigationView>
+
+    </Grid>
+</Window>

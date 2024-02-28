@@ -1,0 +1,31 @@
+﻿<Window x:Class="FFUTweak.img2ffu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FFUTweak"
+         xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        ui:ThemeManager.RequestedTheme="Light"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="FFUTweaker - img2ffu" Height="500" Width="850" Background="White">
+    
+    <Grid>
+        <ui:SimpleStackPanel>
+            <TextBlock Text="Before you can use FFUTweaker to modify WP 8.1 images, you need to update it to W10M, this process will create an image from emmc dump. The 'IMG2FFU' code used was modified by WojTasXDA and included into FFUTweaker. To find the Platform ID of your device, plug the device into WPInternals and note down the Platform ID" TextWrapping="Wrap" Margin="20,10,20,0"/>
+            <Button x:Name="LoadDump" Content="Load emmc dump" Margin="15,15,0,0" Click="LoadDump_Click"/>
+            <ui:SimpleStackPanel x:Name="FFUGenInfo" Orientation="Horizontal" Margin="0,5,0,0" Visibility="Collapsed">
+                <TextBox x:Name="PlatIDText" Text="Enter Platform ID" Width="150" Margin="75,0,0,0"/>
+                <TextBox x:Name="OSVersionText" Text="Enter OS Version" Width="150" Margin="5,0,0,0"/>
+                <Button x:Name="SaveLocationBtn" Content="Save Location" Click="SaveLocationBtn_Click" Margin="5,0,0,0"/>
+                <Button x:Name="StartProcess" Content="Start" IsEnabled="False" Click="StartProcess_Click"  Margin="275,0,0,0"/>
+
+            </ui:SimpleStackPanel>
+            <TextBlock x:Name="ImageOutputText" Margin="15,10,15,0" Height="320"/>
+            <ProgressBar x:Name="ImageProgress" HorizontalAlignment="Stretch" Height="4" Margin="25,0,25,0"/>
+            
+        </ui:SimpleStackPanel>
+    </Grid>
+</Window>

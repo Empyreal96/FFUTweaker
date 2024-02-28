@@ -1,0 +1,11 @@
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"> 
+
+  <dependency>
+    <dependentAssembly>
+      <assemblyIdentity
+        name="Microsoft.Windows.Build.Appx.AppxPackaging.dll"
+        version="0.0.0.0"/>
+    </dependentAssembly>
+  </dependency>
+
+</assembly>

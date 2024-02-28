@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" elementFormDefault="qualified" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:mstns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="EditionPackageType">
+    <xs:attribute name="RelativePath" type="xs:string"/>
+    <xs:attribute name="PackageName" type="xs:string" />
+    <xs:attribute name="FMDeviceDir" type="xs:string" />
+    <xs:attribute name="FMDeviceName" type="xs:string" />
+    <xs:attribute name="AKName" type="xs:string" use="optional" />
+  </xs:complexType>
+    
+  <xs:complexType name="SupportedCpuType">
+    <xs:attribute name="HostCpuType">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="x86"/>
+                <xs:enumeration value="X86"/>
+                <xs:enumeration value="arm"/>
+                <xs:enumeration value="ARM"/>
+                <xs:enumeration value="amd64"/>
+                <xs:enumeration value="arm64"/>
+                <xs:enumeration value="AMD64"/>
+                <xs:enumeration value="ARM64"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>              
+    <xs:attribute name="WowGuestCpuTypes" type="xs:string" use="optional" />
+
+  </xs:complexType>
+
+
+    <xs:complexType name="LookupType">
+    <xs:attribute name="Method">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Registry"/>
+          <xs:enumeration value="EnvironmentVariable"/>
+          <xs:enumeration value="HardCodedPath"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="Path" type="xs:string" use="optional"/>
+    <xs:attribute name="Key" type="xs:string" use="optional"/>
+    <xs:attribute name="RelativePath" type="xs:string" use="optional"/>
+    <xs:attribute name="MSPackageDirectoryName" type="xs:string" />
+  </xs:complexType>
+
+  <xs:element name="ImagingEditions">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="Editions" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Edition" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="CoreFeatureManifestPackages" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Package" type="EditionPackageType" minOccurs="1" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="OptionalFeatureManifestPackages" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Package" type="EditionPackageType" minOccurs="1" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="SupportedCPUTypes" minOccurs="1" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CPUType" type="SupportedCpuType" minOccurs="1" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    
+                    <xs:element name="UISettings" minOccurs="1" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:all>
+
+                          <xs:element name="Lookups" minOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Lookup" type="LookupType" minOccurs="1" maxOccurs="unbounded"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:all>
+
+                        <xs:attribute name="DisplayType">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:enumeration value="Always"/>
+                                <xs:enumeration value="OnlyWhenInstalled"/>
+                                <xs:enumeration value="Hide"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:all>
+                  <xs:attribute name="Name" type="xs:string"/>
+                  <xs:attribute name="AlternateName" type="xs:string" use="optional"/>
+                  <xs:attribute name="AllowOEMCustomizations" type="xs:boolean" use="optional"/>
+                  <xs:attribute name="RequiresKeyboard" type="xs:boolean" use="optional"/>                    
+                  <xs:attribute name="MinimumUserStoreSize" type="xs:unsignedInt" use="optional"/>
+                  <xs:attribute name="InternalProductDir" type="xs:string"/>                    
+
+                    <xs:attribute name="ReleaseType" use="optional">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="Test"/>
+                        <xs:enumeration value="Production"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

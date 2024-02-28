@@ -1,0 +1,104 @@
+﻿<Page x:Class="FFUTweak.Style"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FFUTweak"
+      xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:ThemeManager.RequestedTheme="Light"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Style">
+
+    <Grid>
+        <ui:SimpleStackPanel>
+            <TextBlock Text="Change the default Font, MDL2 Assets and Emojis here" Margin="75,10,10,0"></TextBlock>
+            <TextBlock Text="Fonts" Margin="75,25,500,0" FontSize="14"></TextBlock>
+            <Line x:Name="FontsLine" X1="0" X2="100"  Margin="75,5,10,0" Stroke="#FFF2F2F2" StrokeThickness="2"/>
+            <ui:SimpleStackPanel Orientation="Horizontal">
+                <ComboBox x:Name="FontsComboBox" SelectedIndex="0"  Margin="80,10,0,0" Width="200">
+                    <ComboBoxItem Tag="DefaultFontTag" Content="Default"/>
+                    <ComboBoxItem Tag="BlueFontTag" Content="Blue"/>
+                    <ComboBoxItem Tag="CyanFontTag" Content="Cyan"/>
+                    <ComboBoxItem Tag="GreenFontTag" Content="Green"/>
+                    <ComboBoxItem Tag="LightGreenFontTag" Content="Light Green"/>
+                    <ComboBoxItem Tag="MagentaFontTag" Content="Magenta"/>
+                    <ComboBoxItem Tag="OrangeFontTag" Content="Orange"/>
+                    <ComboBoxItem Tag="RedFontTag" Content="Red"/>
+                    <ComboBoxItem Tag="7LoveFontTag" Content="7Love"/>
+                    <ComboBoxItem Tag="ArtFontTag" Content="Art"/>
+                    <ComboBoxItem Tag="BaileyFontTag" Content="Bailey"/>
+                    <ComboBoxItem Tag="CakeSegoeFontTag" Content="Cake"/>
+                    <ComboBoxItem Tag="CatholicFontTag" Content="Catholic"/>
+                    <ComboBoxItem Tag="CupidFontTag" Content="Cupid"/>
+                    <ComboBoxItem Tag="DigitalFontTag" Content="Digital"/>
+                    <ComboBoxItem Tag="DINAltFontTag" Content="DIN Alternative"/>
+                    <ComboBoxItem Tag="EdgyFontTag" Content="Edgy"/>
+                    <ComboBoxItem Tag="HelveticaFontTag" Content="Helvetica"/>
+                    <ComboBoxItem Tag="KidsFontTag" Content="Kids"/>
+                    <ComboBoxItem Tag="MvboliFontTag" Content="Mvboli"/>
+                    <ComboBoxItem Tag="OksanaFontTag" Content="Oksana"/>
+                    <ComboBoxItem Tag="OswaldLightFontTag" Content="Oswald Light"/>
+                    <ComboBoxItem Tag="RioFontTag" Content="Rio"/>
+                    <ComboBoxItem Tag="RixFontTag" Content="Rix Love Fool"/>
+                    <ComboBoxItem Tag="SanFranciscoFontTag" Content="San Francisco"/>
+                    <ComboBoxItem Tag="SFiOS9FontTag" Content="SFiOS9"/>
+                    <ComboBoxItem Tag="SketchFlowFontTag" Content="Sketch Flow"/>
+                    <ComboBoxItem Tag="TampusFontTag" Content="Tampus Sans"/>
+                    <ComboBoxItem Tag="UbuntuFontTag" Content="Ubuntu Light"/>
+                    <ComboBoxItem Tag="WillowFontTag" Content="Willow"/>
+                    <ComboBoxItem Tag="Windows10UpdFontTag" Content="Windows 10 (Updated)"/>
+
+                </ComboBox>
+                <Button x:Name="LoadFontFile" Content="Open Font File" Click="LoadFontFile_Click" Margin="12,10,0,0"/>
+                <TextBlock x:Name="UserFontName" Width="200" VerticalAlignment="Center" Margin="15,10,0,0" FontSize="14"/>
+                <Button x:Name="ApplyFontBtn" Content="Apply Font" Click="ApplyFontBtn_Click" Margin="60,10,0,0"/>
+            </ui:SimpleStackPanel>
+            <TextBlock x:Name="FontPreview" Text="The quick brown fox jumps over the lazy dog" Margin="75,15,75,0" FontSize="16"/>
+
+            <TextBlock Text="MDL2" Margin="75,25,500,0" FontSize="14"></TextBlock>
+            <Line x:Name="MDLLine" X1="0" X2="100"  Margin="75,5,10,0" Stroke="#FFF2F2F2" StrokeThickness="2"/>
+            <ui:SimpleStackPanel Orientation="Horizontal">
+                <ComboBox x:Name="MdlComboBox" SelectedIndex="0"  Margin="80,10,0,0" Width="200">
+                    <ComboBoxItem Tag="DefaultTag" Content="Default"/>
+                    <ComboBoxItem Tag="AndroidTag" Content="Android"/>
+                    <ComboBoxItem Tag="CircularBatTag" Content="Circular Battery"/>
+                    <ComboBoxItem Tag="FullColorTag" Content="Full Color"/>
+                    <ComboBoxItem Tag="HalfColorTag" Content="Half Color"/>
+                    <ComboBoxItem Tag="iOSTag" Content="iOS"/>
+                    <ComboBoxItem Tag="MDL2ColorTag" Content="SegMDL2 Colored"/>
+                    <ComboBoxItem Tag="VioletTag" Content="Violet + Colors"/>
+                    <ComboBoxItem Tag="Win10XTag" Content="Windows 10X"/>
+                    <ComboBoxItem Tag="Win11Tag" Content="Windows 11"/>
+                </ComboBox>
+                <Button x:Name="LoadMDLFile" IsEnabled="false" Content="Open MDL2 File" Click="LoadMDLFile_Click"  Margin="12,10,0,0"/>
+                <TextBlock x:Name="UserMDLName" Width="200" VerticalAlignment="Center" Margin="15,10,0,0" FontSize="14"/>
+                <Button x:Name="ApplyMDLBtn" Content="Apply Assets" Click="ApplyMDLBtn_Click"  Margin="52,10,0,0" VerticalAlignment="Top"/>
+            </ui:SimpleStackPanel>
+            <ui:SimpleStackPanel x:Name="fontIconsPanel"  Orientation="Horizontal" Margin="75,15,75,0">
+                <TextBlock Text="Preview not available yet"/>
+            </ui:SimpleStackPanel>
+
+            <TextBlock Text="Emoji" Margin="75,25,500,0" FontSize="14"></TextBlock>
+            <Line x:Name="EmojiLine" X1="0" X2="100"  Margin="75,5,10,0" Stroke="#FFF2F2F2" StrokeThickness="2"/>
+            <ui:SimpleStackPanel Orientation="Horizontal">
+                <ComboBox x:Name="EmojiComboBox" SelectedIndex="0"  Margin="80,10,0,0" Width="200">
+                    <ComboBoxItem Content="Default"/>
+                    <ComboBoxItem Content="Windows 10 (Updated)"/>
+                    <ComboBoxItem Content="W10M 1511"/>
+                    <ComboBoxItem Content="W10M 1607"/>
+                    <ComboBoxItem Content="W10M 1709"/>
+                    <ComboBoxItem Content="Windows 11"/>
+                    <ComboBoxItem Content="WP8.1 B+W"/>
+
+                </ComboBox>
+                <Button x:Name="LoadEmojiFile" IsEnabled="false" Content="Open Emoji File" Click="LoadEmojiFile_Click"  Margin="12,10,0,0"/>
+                <TextBlock x:Name="UserEmojiName" Width="200" VerticalAlignment="Center" Margin="15,10,0,0" FontSize="14"/>
+                <Button x:Name="ApplyEmojiBtn" Content="Apply Emoji" Click="ApplyEmojiBtn_Click"  Margin="52,10,0,0" VerticalAlignment="Top"/>
+            </ui:SimpleStackPanel>
+            <TextBlock x:Name="EmojiPreview" Text="Previews not available yet" Margin="75,15,75,0" FontSize="16"/>
+
+        </ui:SimpleStackPanel>
+
+    </Grid>
+</Page>

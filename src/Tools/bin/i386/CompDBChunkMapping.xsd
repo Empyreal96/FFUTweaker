@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" elementFormDefault="qualified" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:mstns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="CompDBChunkMapping">
+        <xs:complexType>
+            <xs:all>
+                
+                <xs:element name="ChunkMappings" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Mapping" minOccurs="1" maxOccurs="unbounded">
+                                
+                                <xs:complexType>
+                                    <xs:attribute name="ChunkName" type="xs:string"/>
+                                    <xs:attribute name="Path" type="xs:string" />
+
+                                    <xs:attribute name="Type">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="EDITION"/>
+                                                <xs:enumeration value="LANGPACK"/>
+                                                <xs:enumeration value="FOD"/>
+                                                <xs:enumeration value="APP"/>
+                                                <xs:enumeration value="NGEN"/>
+                                                <xs:enumeration value="ESD"/>
+                                                <xs:enumeration value="UPDATEBOX"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+
+                                </xs:complexType>
+                            
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

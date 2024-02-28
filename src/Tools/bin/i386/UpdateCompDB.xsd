@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" elementFormDefault="qualified" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:mstns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="PkgType">
+        <xs:sequence>
+            <xs:element name="Payload" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="PayloadItem" type="PayloadItemType" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="ID" type="xs:string" />
+        <xs:attribute name="Path" type="xs:string" />
+        <xs:attribute name="Partition" use="optional" />
+        <xs:attribute name="Version" type="xs:string" />
+        <xs:attribute name="ReleaseType" type="xs:string" use="optional"  />
+        <xs:attribute name="OwnerType" type="xs:string" use="optional"  />
+        <xs:attribute name="SatelliteType" type="xs:string" use="optional" />
+        <xs:attribute name="SatelliteValue" type="xs:string" use="optional" />
+        <xs:attribute name="Encrypted" type="xs:boolean" use="optional" />
+        <xs:attribute name="PublicKeyToken" type="xs:string" use="optional" />
+        <xs:attribute name="BinaryPartition" type="xs:boolean" use="optional" />
+        <xs:attribute name="UserInstallable" type="xs:boolean" use="optional" />
+        <xs:attribute name="SourceFMFile" type="xs:string" use="optional" />
+        <xs:attribute name="BuildArchOverride" type="xs:string" use="optional" />
+    </xs:complexType>
+
+    <xs:complexType name="PayloadItemType">
+        <xs:attribute name="PayloadHash" type="xs:string" use="optional" />
+        <xs:attribute name="PayloadSize" type="xs:long" use="optional" />
+        <xs:attribute name="Path" type="xs:string" />
+        <xs:attribute name="PreviousPath" type="xs:string" />
+        <xs:attribute name="PayloadType">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="(Canonical|Diff|ExpressPSF|ExpressCab)"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="FeaturePkgType">
+        <xs:attribute name="ID" type="xs:string" />
+        <xs:attribute name="FIP" type="xs:boolean" use="optional"/>
+        <xs:attribute name="UpdateType" use="optional">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="(Removal|Diff|Canonical|NoUpdate)"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="PackageType">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="(FeaturePackage|MediaFileList|MetadataESD)"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:element name="CompDB">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Features" minOccurs="1" maxOccurs="1" >
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Feature" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Packages" minOccurs="0" maxOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Package" type="FeaturePkgType" minOccurs="0" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="FeatureID" type="xs:string" />
+                                    <xs:attribute name="FMID" type="xs:string" use="optional"/>
+                                    <xs:attribute name="Type" use="optional">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="(None|MobileFeature|DesktopMedia|OptionalFeature|OnDemandFeature|LanguagePack|GDR|CritGDR|Tool)"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="Group" type="xs:string" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Packages" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Package" type="PkgType" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+            <xs:attribute name="CreatedDate" type="xs:string" />
+            <xs:attribute name="Revision" type="xs:string" />
+            <xs:attribute name="SchemaVersion" type="xs:string" />
+            <xs:attribute name="Type">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="(Build|Update|BSP|Device)"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="Product" type="xs:string"  use="optional" />
+            <xs:attribute name="ReleaseType" use="optional" >
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="(Production|Test)"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="BuildID" type="xs:string" />
+            <xs:attribute name="BuildInfo" type="xs:string" />
+            <xs:attribute name="OSVersion" type="xs:string" />
+            <xs:attribute name="BuildArch" type="xs:string" />
+            <xs:attribute name="TargetBuildID" type="xs:string" />
+            <xs:attribute name="TargetBuildInfo" type="xs:string" />
+            <xs:attribute name="TargetOSVersion" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="FFUTweak.WP81Updater"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FFUTweak"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        ui:ThemeManager.RequestedTheme="Light"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="FFUTweaker - 8.1 Updater" Height="500" Width="850" Background="White">
+    <Grid>
+        <ui:SimpleStackPanel>
+            <TextBlock Text="Before you can use FFUTweaker to modify WP 8.1 images, you need to update it to W10M, this process will take some time as it involves several steps" TextWrapping="Wrap" Margin="20,10,20,0"/>
+            <Button x:Name="LoadFFU" Content="Load 8.1 FFU" Margin="15,15,0,0" Click="LoadFFU_Click"/>
+            <TextBlock x:Name="FFUOutputText" Margin="15,10,15,0" Height="300"/>
+            <ProgressBar x:Name="FFUProgress" HorizontalAlignment="Stretch" Height="4" Margin="25,0,25,0"/>
+            <ui:SimpleStackPanel Orientation="Horizontal">
+                <Button x:Name="StartProcess" Content="Start Update" IsEnabled="False" Click="StartProcess_Click" Margin="15,0,0,0"/>
+            </ui:SimpleStackPanel>
+        </ui:SimpleStackPanel>
+    </Grid>
+</Window>

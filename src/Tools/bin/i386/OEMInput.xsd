@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" elementFormDefault="qualified" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:mstns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="OEMInput">
+      <xs:complexType>
+          <xs:all>
+            <xs:element name="Product" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="SV" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="SOC" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="Device" type="xs:string" minOccurs="1" maxOccurs="1"/>
+
+            <xs:element name="ReleaseType" minOccurs="1" maxOccurs="1">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="Test"/>
+                  <xs:enumeration value="Production"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            
+            <xs:element name="BuildType" minOccurs="1" maxOccurs="1">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="fre"/>
+                  <xs:enumeration value="chk"/>
+                  <xs:enumeration value="%BUILDTYPE%"/>                  
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+
+            <xs:element name="FormatDPP" minOccurs="0" maxOccurs="1">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="true"/>
+                  <xs:enumeration value="false"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+
+            <xs:element name="ExcludePrereleaseFeatures" minOccurs="0" maxOccurs="1">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="true"/>
+                  <xs:enumeration value="false"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+
+            <xs:element name="OEMDevicePlatform" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            
+            <xs:element name="SupportedLanguages" minOccurs="1" maxOccurs="1">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element name="UserInterface" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Language" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="Keyboard" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Language" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="Speech" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Language" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+
+
+
+            <xs:element name="BootUILanguage" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            
+            <xs:element name="BootLocale" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            
+            <xs:element name="Resolutions" minOccurs="1" maxOccurs="1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Resolution" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Features" minOccurs="0" maxOccurs="1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Microsoft" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Feature" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="OEM" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Feature" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+
+            <xs:element name="AdditionalFMs" minOccurs="0" maxOccurs="1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AdditionalFM" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+
+            <xs:element name="UserStoreMapData" minOccurs="0" maxOccurs="1">
+              <xs:complexType>
+                <xs:attribute name="SourceDir" type="xs:string" />
+                <xs:attribute name="UserStoreDir" type="xs:string" />
+              </xs:complexType>
+            </xs:element>
+
+            <xs:element name="PackageFiles" minOccurs="0" maxOccurs="1">
+                  <xs:complexType>
+                      <xs:sequence>
+                          <xs:element name="PackageFile" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                      </xs:sequence>
+                  </xs:complexType>
+              </xs:element>
+            
+          </xs:all>
+      </xs:complexType>
+  </xs:element>
+</xs:schema>

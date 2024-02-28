@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://schemas.microsoft.com/developer/msbuild/2003" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Project">
+    <xs:annotation>
+      <xs:documentation>
+        <!-- _locID_text="Project" _locComment="" -->An MSBuild Project
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+
+      <xs:sequence>
+        <xs:element name="ItemGroup" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="File" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Include" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="InstallPath" type="xs:string" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="MC_ARM_FRE" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="MC_ARM_CHK" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="MC_X86_FRE" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="MC_X86_CHK" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="MC_ARM64_FRE" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="MC_ARM64_CHK" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="MC_AMD64_FRE" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="MC_AMD64_CHK" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="Feature" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="Owner" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="BusinessReason" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+
+      <xs:attribute name="ToolsVersion" type="xs:string" use="optional">
+        <xs:annotation>
+          <xs:documentation>
+            <!-- _locID_text="Project_ToolsVersion" _locComment="" -->Optional string describing the toolset version this project should normally be built with
+          </xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

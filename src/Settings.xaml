@@ -1,0 +1,158 @@
+﻿<Page x:Class="FFUTweak.Settings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FFUTweak"
+      xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:ThemeManager.RequestedTheme="Light"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Settings">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Configure various settings for the image, you can also load your own Provisioning Packages (PPKG) to further customise your image." Margin="75,10,10,0"></TextBlock>
+
+            <StackPanel Orientation="Horizontal" Margin="75,10,0,0">
+                <Button x:Name="LoadPPKGBtn" Content="Open PPKG" Click="LoadPPKGBtn_Click" Margin="0,10,0,0"/>
+                <TextBlock x:Name="PPKGInfo" Text="No file loaded" Width="400" Margin="10,20,0,0"/>
+                <Button x:Name="ShowAnswerFileBtn" IsEnabled="False" Content="View in Notepad" HorizontalAlignment="Right" Click="ShowAnswerFileBtn_Click" Margin="125,10,0,0"/>
+
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Theme: " VerticalAlignment="Bottom" Margin="75,0,0,5" FontSize="16"/>
+                <ComboBox x:Name="DefaultThemeCombo" Margin="5,15,0,0" SelectionChanged="DefaultThemeCombo_SelectionChanged">
+                    <ComboBoxItem Tag="DarkTheme" Content="Dark"/>
+                    <ComboBoxItem Tag="LightTheme" Content="Light"/>
+                </ComboBox>
+                <TextBlock Text="Accent Color: " VerticalAlignment="Bottom" Margin="17,0,0,5" FontSize="16"/>
+                <ComboBox x:Name="DefaultAccentCombo" Text="Color" Margin="15,15,0,0" SelectionChanged="DefaultAccentCombo_SelectionChanged">
+                    <ComboBoxItem x:Name="LimeAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Lime" Width="15" Height="15"/>
+                            <TextBlock Text="Lime" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="GreenAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Green" Width="15" Height="15"/>
+                            <TextBlock Text="Green" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="CrimsonAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Crimson" Width="15" Height="15"/>
+                            <TextBlock Text="Crimson" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="RedAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Red" Width="15" Height="15"/>
+                            <TextBlock Text="Red" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="OrangeAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Orange" Width="15" Height="15"/>
+                            <TextBlock Text="Orange" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="AmberAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="DarkOrange" Width="15" Height="15"/>
+                            <TextBlock Text="Amber" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="YellowAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Yellow" Width="15" Height="15"/>
+                            <TextBlock Text="Yellow" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="BrownAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Brown" Width="15" Height="15"/>
+                            <TextBlock Text="Brown" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="OliveAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Olive" Width="15" Height="15"/>
+                            <TextBlock Text="Olive" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="SteelAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="SteelBlue" Width="15" Height="15"/>
+                            <TextBlock Text="Steel" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="MauveAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="BlueViolet" Width="15" Height="15"/>
+                            <TextBlock Text="Mauve" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="TaupeAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="SaddleBrown" Width="15" Height="15"/>
+                            <TextBlock Text="Taupe" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="EmeraldAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="ForestGreen" Width="15" Height="15"/>
+                            <TextBlock Text="Emerald" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="TealAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Teal" Width="15" Height="15"/>
+                            <TextBlock Text="Teal" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="CyanAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Cyan" Width="15" Height="15"/>
+                            <TextBlock Text="Cyan" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="CobaltAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="MediumBlue" Width="15" Height="15"/>
+                            <TextBlock Text="Cobalt" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="IndigoAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Indigo" Width="15" Height="15"/>
+                            <TextBlock Text="Indigo" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="VioletAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Violet" Width="15" Height="15"/>
+                            <TextBlock Text="Violet" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="PinkAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Pink" Width="15" Height="15"/>
+                            <TextBlock Text="Pink" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="MagentaAccent" MaxWidth="150">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Magenta" Width="15" Height="15"/>
+                            <TextBlock Text="Magenta" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <CheckBox x:Name="HideOOBECheck" Content="Hide OOBE" Margin="75,25,0,0"/>
+        </StackPanel>
+
+    </Grid>
+</Page>

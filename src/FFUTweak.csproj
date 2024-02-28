@@ -1,0 +1,1579 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x86</Platforms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Authors>Empyreal96</Authors>
+    <Company />
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Copyright>Empyreal96 - 2023</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\developermenu.efi" />
+    <None Remove="Assets\PenguinStore.png" />
+    <None Remove="Assets\ppkg.cfg.bin" />
+    <None Remove="Assets\WUT.png" />
+    <None Remove="Assets\ZellaStore.png" />
+    <None Remove="makecat.exe" />
+    <None Remove="makecat.exe.manifest" />
+    <None Remove="Microsoft.Windows.Build.Signing.wintrust.dll.manifest" />
+    <None Remove="Resources\buildlists\14393.1066.cbsu.txt" />
+    <None Remove="Resources\buildlists\14393.1066.txt" />
+    <None Remove="Resources\buildlists\15063.297.txt" />
+    <None Remove="Resources\buildlists\15254.603.txt" />
+    <None Remove="Resources\cabs\Empyreal96.EFIESP.UEFIChargingLogToDisplay.cab" />
+    <None Remove="Resources\cabs\Empyreal96.MainOS.Developer_Mode.cab" />
+    <None Remove="Resources\cabs\Empyreal96.MainOS.OSVersionDisplayType.cab" />
+    <None Remove="Resources\Defaults\segmdl2.ttf" />
+    <None Remove="Resources\Defaults\segoeui.ttf" />
+    <None Remove="Resources\Defaults\seguiemj.ttf" />
+    <None Remove="Resources\System Emojis\W10 Updated Emoji\seguiemj.ttf" />
+    <None Remove="Resources\System Emojis\W10M 1511 Emoji\seguiemj.ttf" />
+    <None Remove="Resources\System Emojis\W10M 1607 Emoji\seguiemj.ttf" />
+    <None Remove="Resources\System Emojis\W10M 1709 Emoji\seguiemj.ttf" />
+    <None Remove="Resources\System Emojis\W11 Fluent Emoji\seguiemj.ttf" />
+    <None Remove="Resources\System Emojis\W8.1 B&amp;W Emoji\seguiemj.ttf" />
+    <None Remove="Resources\System Fonts\Colored Fonts\Blue\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Colored Fonts\Cyan\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Colored Fonts\Green\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Colored Fonts\Light Green\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Colored Fonts\Magenta %28Dark Purple%29\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Colored Fonts\Orange\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Colored Fonts\Red\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\7Love\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Art\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Bailey\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Cake Segoe\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Catholic School\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Cupid\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Digital\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\DIN Alternate\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Edgy\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Harry Poter\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Helvetica Segoe\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Kids\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Mvboli\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Oksana\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Oswald Light\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Rio Segoe\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Rix Love Fool\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\San Francisco\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\SFiOS9\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\SketchFlow\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Tampus Sans ITC\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\UBUNTU Light\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Custom Font\Willow\segoeui.ttf" />
+    <None Remove="Resources\System Fonts\Windows 10 Updated\segoeui.ttf" />
+    <None Remove="Resources\System Icons\Android\segmdl2.ttf" />
+    <None Remove="Resources\System Icons\Circular battery\segmdl2.ttf" />
+    <None Remove="Resources\System Icons\Full Color\segmdl2.ttf" />
+    <None Remove="Resources\System Icons\Half Colored\segmdl2.ttf" />
+    <None Remove="Resources\System Icons\IOS\segmdl2.ttf" />
+    <None Remove="Resources\System Icons\Segmdl2 Colored\segmdl2.ttf" />
+    <None Remove="Resources\System Icons\Violet &amp; FullColors\segmdl2.ttf" />
+    <None Remove="Resources\System Icons\Windows 10X Icons\segmdl2.ttf" />
+    <None Remove="Resources\System Icons\Windows 11 Icons\segmdl2.ttf" />
+    <None Remove="Tools\7z\7z.dll" />
+    <None Remove="Tools\7z\7z.exe" />
+    <None Remove="Tools\bin\flashtools\Newtonsoft.Json.dll" />
+    <None Remove="Tools\bin\flashtools\ref\WPinternals.dll" />
+    <None Remove="Tools\bin\flashtools\runtimes\win\lib\netcoreapp2.0\System.Management.dll" />
+    <None Remove="Tools\bin\flashtools\runtimes\win\lib\netstandard2.0\System.IO.Ports.dll" />
+    <None Remove="Tools\bin\flashtools\System.IO.Ports.dll" />
+    <None Remove="Tools\bin\flashtools\System.Management.dll" />
+    <None Remove="Tools\bin\flashtools\thor2.exe" />
+    <None Remove="Tools\bin\flashtools\WPinternals.deps.json" />
+    <None Remove="Tools\bin\flashtools\WPinternals.dll" />
+    <None Remove="Tools\bin\flashtools\WPinternals.dll.config" />
+    <None Remove="Tools\bin\flashtools\WPinternals.exe" />
+    <None Remove="Tools\bin\flashtools\WPinternals.pdb" />
+    <None Remove="Tools\bin\flashtools\WPinternals.runtimeconfig.dev.json" />
+    <None Remove="Tools\bin\flashtools\WPinternals.runtimeconfig.json" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-COM-L1-1-0.dll" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-FILE-L1-2-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-FILE-L2-1-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-HEAP-OBSOLETE-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-KERNEL32-LEGACY-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-LOCALIZATION-L1-2-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-LOCALIZATION-OBSOLETE-L1-2-0.dll" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-PROCESSSECURITY-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-REGISTRY-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-STRING-OBSOLETE-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-SYNCH-L1-2-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-SYSINFO-L1-2-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-TIMEZONE-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-VERSION-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-CORE-WOW64-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\API-MS-WIN-SECURITY-PROVIDER-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\applypolicy.exe" />
+    <None Remove="Tools\bin\i386\AppxPackaging.dll" />
+    <None Remove="Tools\bin\i386\bootflowapi.dll" />
+    <None Remove="Tools\bin\i386\cabapi.dll" />
+    <None Remove="Tools\bin\i386\cabapiwrapper.dll" />
+    <None Remove="Tools\bin\i386\capabilitylist.cfg" />
+    <None Remove="Tools\bin\i386\cbscore.dll" />
+    <None Remove="Tools\bin\i386\ConfigCarveTest.bat" />
+    <None Remove="Tools\bin\i386\ConvertDSM.exe" />
+    <None Remove="Tools\bin\i386\ConvertDSM.exe.manifest" />
+    <None Remove="Tools\bin\i386\ConvertDSMDLL.dll" />
+    <None Remove="Tools\bin\i386\customizationgen.cmd" />
+    <None Remove="Tools\bin\i386\deploytest.exe" />
+    <None Remove="Tools\bin\i386\DeviceLayoutValidation.dll" />
+    <None Remove="Tools\bin\i386\devicenodecleanup.x64.exe" />
+    <None Remove="Tools\bin\i386\devicenodecleanup.x86.exe" />
+    <None Remove="Tools\bin\i386\dpx.dll" />
+    <None Remove="Tools\bin\i386\DriverRuleTemplate.xml" />
+    <None Remove="Tools\bin\i386\drvstore.dll" />
+    <None Remove="Tools\bin\i386\Dumpdiff.exe" />
+    <None Remove="Tools\bin\i386\Empyreal96.CustomUpdate.Package.pkg.xml" />
+    <None Remove="Tools\bin\i386\featureapi.dll" />
+    <None Remove="Tools\bin\i386\featuremerger.exe" />
+    <None Remove="Tools\bin\i386\ffucomponents.dll" />
+    <None Remove="Tools\bin\i386\ffutool.exe" />
+    <None Remove="Tools\bin\i386\getdulogs.exe" />
+    <None Remove="Tools\bin\i386\GetDumpFile.bat" />
+    <None Remove="Tools\bin\i386\GetResetLogs.exe" />
+    <None Remove="Tools\bin\i386\Hlosmemext.dll" />
+    <None Remove="Tools\bin\i386\imageapp.exe" />
+    <None Remove="Tools\bin\i386\imagecommon.dll" />
+    <None Remove="Tools\bin\i386\imagecustomization.dll" />
+    <None Remove="Tools\bin\i386\imagesigner.exe" />
+    <None Remove="Tools\bin\i386\imagestorageservice.dll" />
+    <None Remove="Tools\bin\i386\imagestorageservicemanaged.dll" />
+    <None Remove="Tools\bin\i386\imagex.exe" />
+    <None Remove="Tools\bin\i386\imaging.dll" />
+    <None Remove="Tools\bin\i386\ImgDump.exe" />
+    <None Remove="Tools\bin\i386\imggen.cmd" />
+    <None Remove="Tools\bin\i386\ImgToolsCommon.dll" />
+    <None Remove="Tools\bin\i386\imgtowim.exe" />
+    <None Remove="Tools\bin\i386\InboxAppLib.dll" />
+    <None Remove="Tools\bin\i386\infverif.dll" />
+    <None Remove="Tools\bin\i386\installoemcerts.cmd" />
+    <None Remove="Tools\bin\i386\iucommon.dll" />
+    <None Remove="Tools\bin\i386\iucore.dll" />
+    <None Remove="Tools\bin\i386\iutool.exe" />
+    <None Remove="Tools\bin\i386\iutoolmessage.dll" />
+    <None Remove="Tools\bin\i386\iuvalidator.dll" />
+    <None Remove="Tools\bin\i386\LocaleInfoTable.xml" />
+    <None Remove="Tools\bin\i386\LocBootPresets.dll" />
+    <None Remove="Tools\bin\i386\logs.cab" />
+    <None Remove="Tools\bin\i386\LOGUTILS.dll" />
+    <None Remove="Tools\bin\i386\makecat.exe" />
+    <None Remove="Tools\bin\i386\makecat.exe.manifest" />
+    <None Remove="Tools\bin\i386\makeoemcerts.cmd" />
+    <None Remove="Tools\bin\i386\mcsfoffline.dll" />
+    <None Remove="Tools\bin\i386\MetadataReader.dll" />
+    <None Remove="Tools\bin\i386\Microsoft.DeviceLayoutValidationManifest.cab" />
+    <None Remove="Tools\bin\i386\microsoft.diagnostics.tracing.eventsource.dll" />
+    <None Remove="Tools\bin\i386\Microsoft.Phone.Test.TestMetadata.dll" />
+    <None Remove="Tools\bin\i386\Microsoft.Phone.TestInfra.Deployment.dll" />
+    <None Remove="Tools\bin\i386\microsoft.Windows.Build.Appx.AppxPackaging.dll.manifest" />
+    <None Remove="Tools\bin\i386\microsoft.Windows.Build.Appx.OpcServices.dll.manifest" />
+    <None Remove="Tools\bin\i386\Microsoft.Windows.Build.InboxAppLib.dll.manifest" />
+    <None Remove="Tools\bin\i386\Microsoft.Windows.Build.PkgGen.Plugin.InboxApp.dll.manifest" />
+    <None Remove="Tools\bin\i386\Microsoft.Windows.Build.Signing.wintrust.dll.manifest" />
+    <None Remove="Tools\bin\i386\microsoft.windowsphone.security.securitypolicycompiler.dll" />
+    <None Remove="Tools\bin\i386\microsoft.windowsphone.security.securitypolicyschema.dll" />
+    <None Remove="Tools\bin\i386\MSVCP100.dll" />
+    <None Remove="Tools\bin\i386\MSVCR100.dll" />
+    <None Remove="Tools\bin\i386\msvcrt.dll" />
+    <None Remove="Tools\bin\i386\MtbfReportGenerator.exe" />
+    <None Remove="Tools\bin\i386\MtbfReportGenerator.exe.config" />
+    <None Remove="Tools\bin\i386\MtbfReportHtml.xslt" />
+    <None Remove="Tools\bin\i386\MtbfReportHtmlLinks.xslt" />
+    <None Remove="Tools\bin\i386\MtbfReportHtmlLinksToTxtLogs.xslt" />
+    <None Remove="Tools\bin\i386\MtbfReportHtmlLinksToTxtLogs_CHS.xslt" />
+    <None Remove="Tools\bin\i386\MtbfReportHtmlLinks_CHS.xslt" />
+    <None Remove="Tools\bin\i386\MtbfReportHtml_CHS.xslt" />
+    <None Remove="Tools\bin\i386\mvoffline.dll" />
+    <None Remove="Tools\bin\i386\NdisWlanParameterServer.exe" />
+    <None Remove="Tools\bin\i386\OemCustomizationTool.exe" />
+    <None Remove="Tools\bin\i386\offlinelsa.dll" />
+    <None Remove="Tools\bin\i386\offlinesam.dll" />
+    <None Remove="Tools\bin\i386\offreg.dll" />
+    <None Remove="Tools\bin\i386\OpcServices.dll" />
+    <None Remove="Tools\bin\i386\PkgBldr.Common.dll" />
+    <None Remove="Tools\bin\i386\PkgBldr.Plugin.CsiToCsi.Finalize.dll" />
+    <None Remove="Tools\bin\i386\PkgBldr.Plugin.CsiToPkg.Base.dll" />
+    <None Remove="Tools\bin\i386\PkgBldr.Plugin.PkgToWm.Base.dll" />
+    <None Remove="Tools\bin\i386\PkgBldr.Plugin.WmToCsi.Capabilities.dll" />
+    <None Remove="Tools\bin\i386\PkgBldr.Plugin.WmToCsi.Security.dll" />
+    <None Remove="Tools\bin\i386\PkgBldr.Tools.dll" />
+    <None Remove="Tools\bin\i386\pkgcommon.dll" />
+    <None Remove="Tools\bin\i386\pkgcommonmanaged.dll" />
+    <None Remove="Tools\bin\i386\pkggen.cfg.xml" />
+    <None Remove="Tools\bin\i386\PkgGen.exe" />
+    <None Remove="Tools\bin\i386\PkgGen.exe.manifest" />
+    <None Remove="Tools\bin\i386\PkgGen.Plugin.InboxApp.dll" />
+    <None Remove="Tools\bin\i386\PkgGen.Plugin.MCSF.dll" />
+    <None Remove="Tools\bin\i386\pkggencommon.dll" />
+    <None Remove="Tools\bin\i386\pkgsigntool.exe" />
+    <None Remove="Tools\bin\i386\platformmanifest.dll" />
+    <None Remove="Tools\bin\i386\raw2dump.exe" />
+    <None Remove="Tools\bin\i386\ReflectionAdds.dll" />
+    <None Remove="Tools\bin\i386\reghivebuilder.exe" />
+    <None Remove="Tools\bin\i386\registryapi.dll" />
+    <None Remove="Tools\bin\i386\secwimtool.exe" />
+    <None Remove="Tools\bin\i386\sign.cmd" />
+    <None Remove="Tools\bin\i386\signinfohelper.dll" />
+    <None Remove="Tools\bin\i386\signtool.exe" />
+    <None Remove="Tools\bin\i386\spkggen.exe" />
+    <None Remove="Tools\bin\i386\StopWatch.exe" />
+    <None Remove="Tools\bin\i386\TestMetadataTool.exe" />
+    <None Remove="Tools\bin\i386\toolscommon.dll" />
+    <None Remove="Tools\bin\i386\TypeSystemMock.dll" />
+    <None Remove="Tools\bin\i386\UEFIUSBFnDevTester.exe" />
+    <None Remove="Tools\bin\i386\updateapi.dll" />
+    <None Remove="Tools\bin\i386\updateapp.exe" />
+    <None Remove="Tools\bin\i386\updatedll.dll" />
+    <None Remove="Tools\bin\i386\USB_Test_Infrastructure.dll" />
+    <None Remove="Tools\bin\i386\UtilityLibrary.dll" />
+    <None Remove="Tools\bin\i386\wcp.dll" />
+    <None Remove="Tools\bin\i386\wimgapi.dll" />
+    <None Remove="Tools\bin\i386\wiminterop.dll" />
+    <None Remove="Tools\bin\i386\wintrust.dll" />
+    <None Remove="Tools\bin\i386\wintrust.dll.ini" />
+    <None Remove="Tools\bin\i386\wofdeploy.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-COM-L1-1-0.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-FILE-L1-2-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-FILE-L2-1-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-HEAP-OBSOLETE-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-KERNEL32-LEGACY-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-LOCALIZATION-L1-2-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-LOCALIZATION-OBSOLETE-L1-2-0.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-PROCESSSECURITY-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-REGISTRY-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-STRING-OBSOLETE-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-SYNCH-L1-2-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-SYSINFO-L1-2-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-TIMEZONE-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-VERSION-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-WOW64-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\API-MS-WIN-SECURITY-PROVIDER-L1-1-0.DLL" />
+    <None Remove="Tools\bin\i386\WP8Tools\applypolicy.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\AppxPackaging.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\bootflowapi.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\cabapi.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\cabapiwrapper.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\capabilitylist.cfg" />
+    <None Remove="Tools\bin\i386\WP8Tools\cbscore.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\ConfigCarveTest.bat" />
+    <None Remove="Tools\bin\i386\WP8Tools\ConvertDSM.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\ConvertDSMDLL.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\Customization.xsd" />
+    <None Remove="Tools\bin\i386\WP8Tools\customizationgen.cmd" />
+    <None Remove="Tools\bin\i386\WP8Tools\deploytest.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\DeviceLayoutValidation.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\devicenodecleanup.x64.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\devicenodecleanup.x86.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\dpx.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\DriverRuleTemplate.xml" />
+    <None Remove="Tools\bin\i386\WP8Tools\drvstore.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\Dumpdiff.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\featureapi.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\featuremerger.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\ffucomponents.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\ffutool.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\getdulogs.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\GetDumpFile.bat" />
+    <None Remove="Tools\bin\i386\WP8Tools\GetResetLogs.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\Hlosmemext.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\imageapp.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\imagecommon.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\imagecustomization.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\imagesigner.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\imagestorageservice.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\imagestorageservicemanaged.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\imagex.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\imaging.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\ImgDump.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\imggen.cmd" />
+    <None Remove="Tools\bin\i386\WP8Tools\ImgToolsCommon.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\imgtowim.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\InboxAppLib.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\installoemcerts.cmd" />
+    <None Remove="Tools\bin\i386\WP8Tools\iucommon.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\iucore.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\iutool.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\iutoolmessage.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\iuvalidator.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\LocaleInfoTable.xml" />
+    <None Remove="Tools\bin\i386\WP8Tools\LocBootPresets.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\LOGUTILS.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\makeoemcerts.cmd" />
+    <None Remove="Tools\bin\i386\WP8Tools\mcsfoffline.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\MetadataReader.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\Microsoft.DeviceLayoutValidationManifest.cab" />
+    <None Remove="Tools\bin\i386\WP8Tools\Microsoft.Phone.Test.MTP.MTPKPI.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\Microsoft.Phone.Test.TestMetadata.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\Microsoft.Phone.TestInfra.Deployment.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\microsoft.Windows.Build.Appx.AppxPackaging.dll.manifest" />
+    <None Remove="Tools\bin\i386\WP8Tools\microsoft.Windows.Build.Appx.OpcServices.dll.manifest" />
+    <None Remove="Tools\bin\i386\WP8Tools\Microsoft.Windows.Build.InboxAppLib.dll.manifest" />
+    <None Remove="Tools\bin\i386\WP8Tools\Microsoft.Windows.Build.PkgGen.Plugin.InboxApp.dll.manifest" />
+    <None Remove="Tools\bin\i386\WP8Tools\microsoft.windowsphone.security.securitypolicycompiler.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\microsoft.windowsphone.security.securitypolicyschema.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\MSVCP100.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\MSVCR100.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\MtbfReportGenerator.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\MtbfReportGenerator.exe.config" />
+    <None Remove="Tools\bin\i386\WP8Tools\MtbfReportHtml.xslt" />
+    <None Remove="Tools\bin\i386\WP8Tools\MtbfReportHtmlLinks.xslt" />
+    <None Remove="Tools\bin\i386\WP8Tools\MtbfReportHtmlLinksToTxtLogs.xslt" />
+    <None Remove="Tools\bin\i386\WP8Tools\MtbfReportHtmlLinksToTxtLogs_CHS.xslt" />
+    <None Remove="Tools\bin\i386\WP8Tools\MtbfReportHtmlLinks_CHS.xslt" />
+    <None Remove="Tools\bin\i386\WP8Tools\MtbfReportHtml_CHS.xslt" />
+    <None Remove="Tools\bin\i386\WP8Tools\mvoffline.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\NdisWlanParameterServer.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\OemCustomizationTool.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\OEMInput.xsd" />
+    <None Remove="Tools\bin\i386\WP8Tools\offreg.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\OpcServices.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\PkgBldr.Common.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\PkgBldr.Plugin.CsiToCsi.Finalize.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\PkgBldr.Plugin.CsiToPkg.Base.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\PkgBldr.Plugin.PkgToWm.Base.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\PkgBldr.Plugin.WmToCsi.Capabilities.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\PkgBldr.Plugin.WmToCsi.Security.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\PkgBldr.Tools.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\pkgcommon.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\pkgcommonmanaged.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\pkggen.cfg.xml" />
+    <None Remove="Tools\bin\i386\WP8Tools\PkgGen.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\PkgGen.Plugin.InboxApp.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\PkgGen.Plugin.MCSF.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\pkggencommon.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\pkgsigntool.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\policyverification.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\raw2dump.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\ReflectionAdds.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\reghivebuilder.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\registryapi.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\secwimtool.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\sign.cmd" />
+    <None Remove="Tools\bin\i386\WP8Tools\signtool.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\spkggen.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\StopWatch.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\TestMetadataTool.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\toolscommon.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\TypeSystemMock.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\UEFIUSBFnDevTester.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\updateapi.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\updateapp.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\updatedll.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\USB_Test_Infrastructure.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\UtilityLibrary.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\ValidateInstalledFiles.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\ValidateInstalledFiles_Blacklist.xml" />
+    <None Remove="Tools\bin\i386\WP8Tools\ValidateShadowedRegistry.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\wcp.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\wimgapi.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\wiminterop.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\wofdeploy.dll" />
+    <None Remove="Tools\bin\i386\WP8Tools\wpimage.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\WPTCEditorV2.exe" />
+    <None Remove="Tools\bin\i386\WP8Tools\zh-cn\ImageCustomization.Resources.dll" />
+    <None Remove="Tools\bin\i386\wpimage.exe" />
+    <None Remove="Tools\bin\i386\WPTCEditorV2.exe" />
+    <None Remove="Tools\Certificates\OEM_App_Test_Cert_2013.cer" />
+    <None Remove="Tools\Certificates\OEM_App_Test_Cert_2013.pfx" />
+    <None Remove="Tools\Certificates\OEM_HAL_Extension_Test_Cert_2013.cer" />
+    <None Remove="Tools\Certificates\OEM_HAL_Extension_Test_Cert_2013.pfx" />
+    <None Remove="Tools\Certificates\OEM_Intermediate_Cert.cer" />
+    <None Remove="Tools\Certificates\OEM_Intermediate_Cert.pfx" />
+    <None Remove="Tools\Certificates\OEM_Intermediate_FFU_Cert.cer" />
+    <None Remove="Tools\Certificates\OEM_Intermediate_FFU_Cert.pfx" />
+    <None Remove="Tools\Certificates\OEM_PPL_Test_Cert_2013.cer" />
+    <None Remove="Tools\Certificates\OEM_PPL_Test_Cert_2013.pfx" />
+    <None Remove="Tools\Certificates\OEM_PP_Test_Cert_2013.cer" />
+    <None Remove="Tools\Certificates\OEM_PP_Test_Cert_2013.pfx" />
+    <None Remove="Tools\Certificates\OEM_Root_CA.cer" />
+    <None Remove="Tools\Certificates\OEM_Root_CA.pfx" />
+    <None Remove="Tools\Certificates\OEM_Root_CA2.cer" />
+    <None Remove="Tools\Certificates\OEM_Test_Cert_2013.cer" />
+    <None Remove="Tools\Certificates\OEM_Test_Cert_2013.pfx" />
+    <None Remove="Tools\Certificates\OEM_Test_PK_Cert_2013.cer" />
+    <None Remove="Tools\Certificates\OEM_Test_PK_Cert_2013.pfx" />
+    <None Remove="Tools\installoemcerts.bat" />
+    <None Remove="wintrust.dll" />
+    <None Remove="wintrust.dll.ini" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\developermenu.efi">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PenguinStore.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\ppkg.cfg.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\WUT.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\ZellaStore.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="makecat.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="makecat.exe.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Microsoft.Windows.Build.Signing.wintrust.dll.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\cabs\Builtin\ChargeLog\Empyreal96.EFIESP.UEFIChargingLogToDisplay.cab">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\cabs\Builtin\DevMode\Empyreal96.MainOS.Developer_Mode.cab">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\cabs\Builtin\OSVersion\Empyreal96.MainOS.OSVersionDisplayType.cab">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Defaults\mdl2\segmdl2.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Defaults\Font\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Defaults\emoji\seguiemj.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Emojis\W10 Updated Emoji\seguiemj.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Emojis\W10M 1511 Emoji\seguiemj.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Emojis\W10M 1607 Emoji\seguiemj.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Emojis\W10M 1709 Emoji\seguiemj.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Emojis\W11 Fluent Emoji\seguiemj.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Emojis\W8.1 B&amp;W Emoji\seguiemj.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Colored Fonts\Blue\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Colored Fonts\Cyan\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Colored Fonts\Green\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Colored Fonts\Light Green\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Colored Fonts\Magenta (Dark Purple)\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Colored Fonts\Orange\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Colored Fonts\Red\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\7Love\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Art\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Bailey\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Cake Segoe\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Catholic School\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Cupid\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Digital\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\DIN Alternate\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Edgy\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Harry Poter\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Helvetica Segoe\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Kids\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Mvboli\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Oksana\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Oswald Light\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Rio Segoe\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Rix Love Fool\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\San Francisco\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\SFiOS9\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\SketchFlow\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Tampus Sans ITC\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\UBUNTU Light\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Custom Font\Willow\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Fonts\Windows 10 Updated\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\buildlists\14393.1066.cbsu.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\buildlists\14393.1066.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\buildlists\15063.297.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\buildlists\15254.603.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Icons\Android\segmdl2.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Icons\Circular battery\segmdl2.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Icons\Full Color\segmdl2.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Icons\Half Colored\segmdl2.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Icons\IOS\segmdl2.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Icons\Segmdl2 Colored\segmdl2.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Icons\Violet &amp; FullColors\segmdl2.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Icons\Windows 10X Icons\segmdl2.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System Icons\Windows 11 Icons\segmdl2.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\7z\7z.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\7z\7z.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\ref\WPinternals.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\runtimes\win\lib\netcoreapp2.0\System.Management.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\runtimes\win\lib\netstandard2.0\System.IO.Ports.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\System.IO.Ports.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\System.Management.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\thor2.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\WPinternals.deps.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\WPinternals.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\WPinternals.dll.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\WPinternals.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\WPinternals.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\WPinternals.runtimeconfig.dev.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\flashtools\WPinternals.runtimeconfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-COM-L1-1-0.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-FILE-L1-2-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-FILE-L2-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-HEAP-OBSOLETE-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-KERNEL32-LEGACY-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-LOCALIZATION-L1-2-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-LOCALIZATION-OBSOLETE-L1-2-0.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-PROCESSSECURITY-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-REGISTRY-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-STRING-OBSOLETE-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-SYNCH-L1-2-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-SYSINFO-L1-2-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-TIMEZONE-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-VERSION-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-CORE-WOW64-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\API-MS-WIN-SECURITY-PROVIDER-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\applypolicy.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\AppxPackaging.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\bootflowapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\cabapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\cabapiwrapper.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\capabilitylist.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\cbscore.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\ConfigCarveTest.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\ConvertDSM.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\ConvertDSM.exe.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\ConvertDSMDLL.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\customizationgen.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\deploytest.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\DeviceLayoutValidation.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\devicenodecleanup.x64.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\devicenodecleanup.x86.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\dpx.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\DriverRuleTemplate.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\drvstore.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\Dumpdiff.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\Empyreal96.CustomUpdate.Package.pkg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\featureapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\featuremerger.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\ffucomponents.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\ffutool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\getdulogs.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\GetDumpFile.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\GetResetLogs.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\Hlosmemext.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\imageapp.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\imagecommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\imagecustomization.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\imagesigner.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\imagestorageservice.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\imagestorageservicemanaged.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\imagex.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\imaging.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\ImgDump.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\imggen.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\ImgToolsCommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\imgtowim.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\InboxAppLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\infverif.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\installoemcerts.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\iucommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\iucore.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\iutool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\iutoolmessage.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\iuvalidator.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\LocaleInfoTable.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\LocBootPresets.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\logs.cab">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\LOGUTILS.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\makecat.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\makecat.exe.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\makeoemcerts.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\mcsfoffline.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\MetadataReader.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\Microsoft.DeviceLayoutValidationManifest.cab">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\microsoft.diagnostics.tracing.eventsource.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\Microsoft.Phone.Test.TestMetadata.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\Microsoft.Phone.TestInfra.Deployment.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\microsoft.Windows.Build.Appx.AppxPackaging.dll.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\microsoft.Windows.Build.Appx.OpcServices.dll.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\Microsoft.Windows.Build.InboxAppLib.dll.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\Microsoft.Windows.Build.PkgGen.Plugin.InboxApp.dll.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\Microsoft.Windows.Build.Signing.wintrust.dll.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\microsoft.windowsphone.security.securitypolicycompiler.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\microsoft.windowsphone.security.securitypolicyschema.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\MSVCP100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\MSVCR100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\msvcrt.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\MtbfReportGenerator.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\MtbfReportGenerator.exe.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\MtbfReportHtml.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\MtbfReportHtmlLinks.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\MtbfReportHtmlLinksToTxtLogs.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\MtbfReportHtmlLinksToTxtLogs_CHS.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\MtbfReportHtmlLinks_CHS.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\MtbfReportHtml_CHS.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\mvoffline.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\NdisWlanParameterServer.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\OemCustomizationTool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\offlinelsa.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\offlinesam.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\offreg.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\OpcServices.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\PkgBldr.Common.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\PkgBldr.Plugin.CsiToCsi.Finalize.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\PkgBldr.Plugin.CsiToPkg.Base.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\PkgBldr.Plugin.PkgToWm.Base.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\PkgBldr.Plugin.WmToCsi.Capabilities.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\PkgBldr.Plugin.WmToCsi.Security.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\PkgBldr.Tools.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\pkgcommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\pkgcommonmanaged.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\pkggen.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\PkgGen.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\PkgGen.exe.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\PkgGen.Plugin.InboxApp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\PkgGen.Plugin.MCSF.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\pkggencommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\pkgsigntool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\platformmanifest.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\raw2dump.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\ReflectionAdds.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\reghivebuilder.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\registryapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\secwimtool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\sign.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\signinfohelper.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\signtool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\spkggen.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\StopWatch.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\TestMetadataTool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\toolscommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\TypeSystemMock.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\UEFIUSBFnDevTester.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\updateapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\updateapp.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\updatedll.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\USB_Test_Infrastructure.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\UtilityLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\wcp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\wimgapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\wiminterop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\wintrust.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\wintrust.dll.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\wofdeploy.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-COM-L1-1-0.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-FILE-L1-2-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-FILE-L2-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-HEAP-OBSOLETE-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-KERNEL32-LEGACY-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-LOCALIZATION-L1-2-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-LOCALIZATION-OBSOLETE-L1-2-0.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-PROCESSSECURITY-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-REGISTRY-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-STRING-OBSOLETE-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-SYNCH-L1-2-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-SYSINFO-L1-2-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-TIMEZONE-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-VERSION-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-CORE-WOW64-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\API-MS-WIN-SECURITY-PROVIDER-L1-1-0.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\applypolicy.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\AppxPackaging.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\bootflowapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\cabapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\cabapiwrapper.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\capabilitylist.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\cbscore.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\ConfigCarveTest.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\ConvertDSM.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\ConvertDSMDLL.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\Customization.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\customizationgen.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\deploytest.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\DeviceLayoutValidation.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\devicenodecleanup.x64.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\devicenodecleanup.x86.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\dpx.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\DriverRuleTemplate.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\drvstore.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\Dumpdiff.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\featureapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\featuremerger.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\ffucomponents.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\ffutool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\getdulogs.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\GetDumpFile.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\GetResetLogs.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\Hlosmemext.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\imageapp.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\imagecommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\imagecustomization.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\imagesigner.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\imagestorageservice.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\imagestorageservicemanaged.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\imagex.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\imaging.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\ImgDump.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\imggen.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\ImgToolsCommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\imgtowim.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\InboxAppLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\installoemcerts.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\iucommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\iucore.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\iutool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\iutoolmessage.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\iuvalidator.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\LocaleInfoTable.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\LocBootPresets.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\LOGUTILS.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\makeoemcerts.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\mcsfoffline.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\MetadataReader.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\Microsoft.DeviceLayoutValidationManifest.cab">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\Microsoft.Phone.Test.MTP.MTPKPI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\Microsoft.Phone.Test.TestMetadata.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\Microsoft.Phone.TestInfra.Deployment.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\microsoft.Windows.Build.Appx.AppxPackaging.dll.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\microsoft.Windows.Build.Appx.OpcServices.dll.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\Microsoft.Windows.Build.InboxAppLib.dll.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\Microsoft.Windows.Build.PkgGen.Plugin.InboxApp.dll.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\microsoft.windowsphone.security.securitypolicycompiler.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\microsoft.windowsphone.security.securitypolicyschema.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\MSVCP100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\MSVCR100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\MtbfReportGenerator.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\MtbfReportGenerator.exe.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\MtbfReportHtml.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\MtbfReportHtmlLinks.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\MtbfReportHtmlLinksToTxtLogs.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\MtbfReportHtmlLinksToTxtLogs_CHS.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\MtbfReportHtmlLinks_CHS.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\MtbfReportHtml_CHS.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\mvoffline.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\NdisWlanParameterServer.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\OemCustomizationTool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\OEMInput.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\offreg.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\OpcServices.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\PkgBldr.Common.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\PkgBldr.Plugin.CsiToCsi.Finalize.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\PkgBldr.Plugin.CsiToPkg.Base.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\PkgBldr.Plugin.PkgToWm.Base.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\PkgBldr.Plugin.WmToCsi.Capabilities.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\PkgBldr.Plugin.WmToCsi.Security.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\PkgBldr.Tools.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\pkgcommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\pkgcommonmanaged.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\pkggen.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\PkgGen.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\PkgGen.Plugin.InboxApp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\PkgGen.Plugin.MCSF.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\pkggencommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\pkgsigntool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\policyverification.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\raw2dump.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\ReflectionAdds.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\reghivebuilder.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\registryapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\secwimtool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\sign.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\signtool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\spkggen.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\StopWatch.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\TestMetadataTool.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\toolscommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\TypeSystemMock.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\UEFIUSBFnDevTester.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\updateapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\updateapp.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\updatedll.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\USB_Test_Infrastructure.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\UtilityLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\ValidateInstalledFiles.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\ValidateInstalledFiles_Blacklist.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\ValidateShadowedRegistry.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\wcp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\wimgapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\wiminterop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\wofdeploy.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\wpimage.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\WPTCEditorV2.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WP8Tools\zh-cn\ImageCustomization.Resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\wpimage.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\bin\i386\WPTCEditorV2.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_App_Test_Cert_2013.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_App_Test_Cert_2013.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_HAL_Extension_Test_Cert_2013.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_HAL_Extension_Test_Cert_2013.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_Intermediate_Cert.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_Intermediate_Cert.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_Intermediate_FFU_Cert.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_Intermediate_FFU_Cert.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_PPL_Test_Cert_2013.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_PPL_Test_Cert_2013.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_PP_Test_Cert_2013.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_PP_Test_Cert_2013.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_Root_CA.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_Root_CA.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_Root_CA2.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_Test_Cert_2013.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_Test_Cert_2013.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_Test_PK_Cert_2013.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\Certificates\OEM_Test_PK_Cert_2013.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wintrust.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wintrust.dll.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Tools\installoemcerts.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModernWpfUI" Version="0.9.7-preview.2" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+    <PackageReference Include="System.Management" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
